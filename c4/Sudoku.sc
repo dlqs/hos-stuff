@@ -29,16 +29,27 @@ Array(0, 0, 5,   2, 0, 6,   3, 0, 0)
 //"+-------+-------+-------+" + sudoku.map(_.mkString("\n")).mkString("")
 
 def renderSudoku(grid: Array[Array[Int]]): String = {
-    val sudoku = grid.grouped(3).map(threeRows =>  {
-        threeRows.map(row => {
-            row
+  val bar = "+-------+-------+-------+"
+  val mid = grid
+    .grouped(3)
+    .map(threeRows => {                
+      threeRows
+        .map(row => {                                    
+          val line = row
+            .grouped(3)
+            .map(threeArr => threeArr.map(e => if (e == 0) " " else e.toString)
+                                                     .mkString(" ")
+            )
+            .mkString(" | ")
+          "| " + line + " |"
         })
+        .mkString("\n")
     })
-    sudoku
+    .mkString("\n" + bar + "\n")
+  bar + "\n" + mid + "\n" + bar
 }
 
-val sudoku1 = 
-"""
+val sudoku1 = """
 +-------+-------+-------+
 | 3 1 6 | 5 7 8 | 4 9 2 |
 | 5 2 9 | 1 3 4 | 7 6 8 |
@@ -53,7 +64,7 @@ val sudoku1 =
 |     5 | 2   6 | 3     |
 +-------+-------+-------+
 """
-assert(renderSudoku(Array(
+val rendered = renderSudoku(Array(
     Array(3, 1, 6,   5, 7, 8,   4, 9, 2),
     Array(5, 2, 9,   1, 3, 4,   7, 6, 8),
     Array(4, 8, 7,   6, 2, 9,   5, 3, 1),
@@ -65,4 +76,6 @@ assert(renderSudoku(Array(
     Array(1, 3, 0,   0, 0, 0,   2, 5, 0),
     Array(0, 0, 0,   0, 0, 0,   0, 7, 4),
     Array(0, 0, 5,   2, 0, 6,   3, 0, 0)
-  )) == sudoku1)
+  ))
+println(rendered)
+assert(rendered == sudoku1)

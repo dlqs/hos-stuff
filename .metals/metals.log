@@ -6397,3 +6397,519 @@ Caused by: java.nio.file.NoSuchFileException: /home/falcon/p/hos2/.ammonite/scal
 2020.12.12 23:21:07 INFO  compiling c13/crawler.sc
 2020.12.12 23:21:07 INFO  time: compiled Crawler.sc in 0.2s
 2020.12.13 13:12:45 INFO  shutting down Metals
+2020.12.15 21:06:56 INFO  Started: Metals version 0.9.7 in workspace '/home/lee/p/hos' for client vscode.
+2020.12.15 21:06:57 INFO  time: initialize in 1.42s
+2020.12.15 21:06:58 WARN  Build server is not auto-connectable.
+2020.12.15 21:06:58 WARN  no build tool detected in workspace '/home/lee/p/hos'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.15 21:07:21 WARN  no build target for: /home/lee/p/hos/c13/TestMergeSort.sc
+2020.12.15 21:07:21 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/lee/.cache/metals/bsp.trace.json
+2020.12.15 21:07:22 INFO  Ammonite: Starting BSP server
+
+2020.12.15 21:07:22 INFO  Connected to Ammonite Build server v2.2.0-4-4bd225e
+2020.12.15 21:07:23 INFO  no build target: using presentation compiler with only scala-library
+2020.12.15 21:07:30 WARN  Could not find java sources in None. Java symbols will not be available.
+2020.12.15 21:07:32 INFO  time: indexed workspace in 2.71s
+2020.12.15 21:07:38 INFO  compiling c13/mergesort.sc
+2020.12.15 21:07:42 INFO  time: compiled MergeSort.sc in 3.34s
+2020.12.15 21:07:42 INFO  compiling c13/testmergesort.sc
+2020.12.15 21:07:43 INFO  time: compiled TestMergeSort.sc in 1.82s
+2020.12.15 21:08:02 WARN  no build target for: /home/lee/p/hos/FetchLinksAsync.sc
+Dec 15, 2020 9:08:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "workspace/didChangeWatchedFiles",
+  "params": {
+    "changes": [
+      {
+        "uri": "file:///home/lee/p/hos/FetchLinksAsync.sc",
+        "type": 3
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.NoSuchFileException: /home/lee/p/hos/FetchLinksAsync.sc
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:370)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:421)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3205)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$onChange$1(MetalsLanguageServer.scala:1158)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$onChange$1$adapted(MetalsLanguageServer.scala:1157)
+	at scala.collection.immutable.Stream.foreach(Stream.scala:533)
+	at scala.meta.internal.metals.MetalsLanguageServer.onChange(MetalsLanguageServer.scala:1157)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChangeWatchedFiles(MetalsLanguageServer.scala:1109)
+	... 16 more
+
+2020.12.15 21:08:51 INFO  disconnected: ammonite build server
+2020.12.15 21:08:51 WARN  no build target for: /home/lee/p/hos/c16/WebCrawler.sc
+2020.12.15 21:08:51 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/lee/.cache/metals/bsp.trace.json
+2020.12.15 21:08:52 INFO  Ammonite: Starting BSP server
+2020.12.15 21:08:52 INFO  Ammonite: 
+
+2020.12.15 21:08:52 INFO  Connected to Ammonite Build server v2.2.0-4-4bd225e
+2020.12.15 21:08:53 ERROR timeout: build server 'Ammonite' during shutdown
+2020.12.15 21:09:00 WARN  Could not find java sources in None. Java symbols will not be available.
+2020.12.15 21:09:00 INFO  time: indexed workspace in 1.06s
+2020.12.15 21:09:00 INFO  compiling c16/webcrawler.sc
+2020.12.15 21:09:02 INFO  time: compiled WebCrawler.sc in 1.85s
+2020.12.15 21:09:02 INFO  compiling c13/mergesort.sc
+2020.12.15 21:09:04 INFO  time: compiled MergeSort.sc in 2.13s
+2020.12.15 21:09:04 INFO  compiling c13/testmergesort.sc
+2020.12.15 21:09:06 INFO  time: compiled TestMergeSort.sc in 1.75s
+Dec 15, 2020 9:09:38 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+Dec 15, 2020 9:09:40 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+2020.12.15 21:10:06 INFO  compiling c16/webcrawler.sc
+2020.12.15 21:10:06 INFO  Ammonite: Error: /home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/target/META-INF/semanticdb/ammonite/$file/c16/WebCrawler_0.scala.semanticdb not found (for /home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/target/META-INF/semanticdb/c16/WebCrawler.sc.semanticdb)
+
+2020.12.15 21:10:06 INFO  time: compiled WebCrawler.sc in 60ms
+Dec 15, 2020 9:10:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.NoSuchFileException: /home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/src/ammonite/$file/c16/WebCrawler.scala
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:370)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:421)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3205)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.mtags.CommonMtagsEnrichments$XtensionAbsolutePath.toInput(CommonMtagsEnrichments.scala:395)
+	at scala.meta.internal.metals.ammonite.Ammonite.$anonfun$generatedScalaInputForPc$1(Ammonite.scala:305)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.metals.ammonite.Ammonite.generatedScalaInputForPc(Ammonite.scala:302)
+	at scala.meta.internal.metals.Compilers.$anonfun$ammoniteInputPosOpt$3(Compilers.scala:496)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.Compilers.ammoniteInputPosOpt(Compilers.scala:489)
+	at scala.meta.internal.metals.Compilers.sourceAdjustments(Compilers.scala:536)
+	at scala.meta.internal.metals.Compilers.withPCAndAdjustLsp(Compilers.scala:514)
+	at scala.meta.internal.metals.Compilers.hover(Compilers.scala:319)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$hover$1(MetalsLanguageServer.scala:1200)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.hover(MetalsLanguageServer.scala:1198)
+	... 16 more
+
+Dec 15, 2020 9:10:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.NoSuchFileException: /home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/src/ammonite/$file/c16/WebCrawler.scala
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:370)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:421)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3205)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.mtags.CommonMtagsEnrichments$XtensionAbsolutePath.toInput(CommonMtagsEnrichments.scala:395)
+	at scala.meta.internal.metals.ammonite.Ammonite.$anonfun$generatedScalaInputForPc$1(Ammonite.scala:305)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.metals.ammonite.Ammonite.generatedScalaInputForPc(Ammonite.scala:302)
+	at scala.meta.internal.metals.Compilers.$anonfun$ammoniteInputPosOpt$3(Compilers.scala:496)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.Compilers.ammoniteInputPosOpt(Compilers.scala:489)
+	at scala.meta.internal.metals.Compilers.sourceAdjustments(Compilers.scala:536)
+	at scala.meta.internal.metals.Compilers.withPCAndAdjustLsp(Compilers.scala:514)
+	at scala.meta.internal.metals.Compilers.hover(Compilers.scala:319)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$hover$1(MetalsLanguageServer.scala:1200)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.hover(MetalsLanguageServer.scala:1198)
+	... 16 more
+
+2020.12.15 21:11:04 INFO  compiling c16/fetchlinksasync.sc
+2020.12.15 21:11:06 WARN  Could not find java sources in None. Java symbols will not be available.
+2020.12.15 21:11:06 INFO  time: indexed workspace in 1.11s
+2020.12.15 21:11:42 INFO  disconnected: ammonite build server
+2020.12.15 21:11:42 WARN  no build target for: /home/lee/p/hos/c16/TestWebCrawler.sc
+2020.12.15 21:11:42 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/lee/.cache/metals/bsp.trace.json
+2020.12.15 21:11:43 INFO  Ammonite: Starting BSP server
+
+2020.12.15 21:11:43 INFO  Connected to Ammonite Build server v2.2.0-4-4bd225e
+2020.12.15 21:11:44 ERROR timeout: build server 'Ammonite' during shutdown
+2020.12.15 21:11:52 WARN  Could not find java sources in None. Java symbols will not be available.
+2020.12.15 21:11:52 INFO  time: indexed workspace in 1.08s
+2020.12.15 21:11:52 INFO  compiling c16/fetchlinksasync.sc
+2020.12.15 21:11:53 INFO  time: compiled FetchLinksAsync.sc in 1s
+Dec 15, 2020 9:22:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 523
+something's wrong: no file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/FetchLinksAsync/src/ammonite/$file/c16/FetchLinksAsync.sc.scala in scala.concurrent.Future[String]RangePosition(file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/FetchLinksAsync/src/ammonite/$file/c16/FetchLinksAsync.sc.scala, 1145, 1145, 1159)
+Dec 15, 2020 9:26:30 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Dec 15, 2020 9:26:30 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:417)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:138)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:156)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:23)
+
+something's wrong: no file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/src/ammonite/$file/c16/WebCrawler.sc.scala in Seq[<error>]RangePosition(file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/src/ammonite/$file/c16/WebCrawler.sc.scala, 1199, 1199, 1212)
+something's wrong: no file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/src/ammonite/$file/c16/WebCrawler.sc.scala in Seq[<error>]RangePosition(file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/src/ammonite/$file/c16/WebCrawler.sc.scala, 1199, 1199, 1205)
+something's wrong: no file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/src/ammonite/$file/c16/WebCrawler.sc.scala in Seq[<error>]RangePosition(file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/src/ammonite/$file/c16/WebCrawler.sc.scala, 1199, 1199, 1206)
+something's wrong: no file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/src/ammonite/$file/c16/WebCrawler.sc.scala in Seq[String]RangePosition(file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/src/ammonite/$file/c16/WebCrawler.sc.scala, 1199, 1199, 1210)
+something's wrong: no file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/src/ammonite/$file/c16/WebCrawler.sc.scala in Seq[String]RangePosition(file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/src/ammonite/$file/c16/WebCrawler.sc.scala, 1199, 1199, 1210)
+something's wrong: no file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/src/ammonite/$file/c16/WebCrawler.sc.scala in Seq[String]RangePosition(file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/src/ammonite/$file/c16/WebCrawler.sc.scala, 1199, 1199, 1210)
+2020.12.15 21:29:34 INFO  compiling c16/webcrawler.sc
+2020.12.15 21:29:34 INFO  Ammonite: Error: /home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/target/META-INF/semanticdb/ammonite/$file/c16/WebCrawler_0.scala.semanticdb not found (for /home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/target/META-INF/semanticdb/c16/WebCrawler.sc.semanticdb)
+2020.12.15 21:29:34 INFO  Ammonite: 
+
+2020.12.15 21:29:34 INFO  time: compiled WebCrawler.sc in 0.12s
+2020.12.15 21:29:35 WARN  Could not find java sources in None. Java symbols will not be available.
+2020.12.15 21:29:35 INFO  time: indexed workspace in 1.24s
+2020.12.15 21:29:36 INFO  compiling c16/testwebcrawler.sc
+2020.12.15 21:29:36 INFO  Ammonite: Dec 15, 2020 9:29:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.util.concurrent.ExecutionException: Boxed Error
+java.util.concurrent.CompletionException: java.util.concurrent.ExecutionException: Boxed Error
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at ammonite.interp.script.AmmoniteBuildServer$.$anonfun$on$1(AmmoniteBuildServer.scala:475)
+	at ammonite.interp.script.AmmoniteBuildServer$.$anonfun$on$1$adapted(AmmoniteBuildServer.scala:473)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.util.concurrent.ExecutionException: Boxed Error
+	at scala.concurrent.impl.Promise$.resolver(Promise.scala:87)
+	at scala.concurrent.impl.Promise$.scala$concurrent$impl$Promise$$resolveTry(Promise.scala:79)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:284)
+	at scala.concurrent.Promise.complete(Promise.scala:53)
+	at scala.concurrent.Promise.complete$(Promise.scala:52)
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:187)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+Caused by: java.lang.AssertionError: assertion failed
+	at scala.Predef$.assert(Predef.scala:208)
+	at ammonite.interp.script.PositionOffsetConversion$.$anonfun$offsetToPos$1(PositionOffsetConversion.scala:64)
+	at ammonite.
+2020.12.15 21:29:36 INFO  Ammonite: interp.script.PositionOffsetConversion$.$anonfun$offsetToPos$1$adapted(PositionOffsetConversion.scala:63)
+	at ammonite.interp.script.SingleScriptCompiler.$anonfun$compileBlock$7(SingleScriptCompiler.scala:251)
+	at ammonite.interp.script.SingleScriptCompiler.$anonfun$compileBlock$7$adapted(SingleScriptCompiler.scala:244)
+	at ammonite.interp.script.SingleScriptCompiler.$anonfun$flushMessages$1(SingleScriptCompiler.scala:60)
+	at ammonite.interp.script.SingleScriptCompiler.$anonfun$flushMessages$1$adapted(SingleScriptCompiler.scala:58)
+	at scala.collection.immutable.List.foreach(List.scala:431)
+	at scala.collection.generic.TraversableForwarder.foreach(TraversableForwarder.scala:38)
+	at scala.collection.generic.TraversableForwarder.foreach$(TraversableForwarder.scala:38)
+	at scala.collection.mutable.ListBuffer.foreach(ListBuffer.scala:47)
+	at ammonite.interp.script.SingleScriptCompiler.flushMessages(SingleScriptCompiler.scala:58)
+	at ammonite.interp.script.SingleScriptCompiler.$anonfun$compileBlock$2(SingleScriptCompiler.scala:244)
+	at ammonite.util.Res$Success.map(Res.scala:67)
+	at ammonite.interp.script.SingleScriptCompiler.compileBlock(SingleScriptCompiler.scala:201)
+	at ammonite.interp.script.SingleScriptCompiler.$anonfun$compileBlocks$1(SingleScriptCompiler.scala:264)
+	at ammonite.util.Res$.$anonfun$fold$1(Res.scala:32)
+	at scala.collection.LinearSeqOptimized.foldLeft(LinearSeqOptimized.scala:126)
+	at scala.collection.LinearSeqOptimized.foldLeft$(LinearSeqOptimized.scala:122)
+	at scala.collection.immutable.List.foldLeft(List.scala:91)
+	at ammonite.util.Res$.fold(Res.scala:30)
+	at ammonite.interp.script.SingleScriptCompiler.compileBlocks(SingleScriptCompiler.scala:262)
+	at ammonite.interp.script.SingleScriptCompiler.apply(SingleScriptCompiler.scala:276)
+	at ammonite.interp.script.ScriptCompiler.doCompile(ScriptCompiler.scala:256)
+	at ammonite.interp.script.ScriptCompiler.$anonfun$compileIfNeeded$1(ScriptCompiler.scala:227)
+	at scala.Option.getOrElse(Option.scala:189)
+	at ammonite.interp.script.ScriptCompiler.compi
+2020.12.15 21:29:36 INFO  Ammonite: leIfNeeded(ScriptCompiler.scala:225)
+	at ammonite.interp.script.ScriptCompiler.compile(ScriptCompiler.scala:90)
+	at ammonite.interp.script.AmmoniteBuildServer.$anonfun$compileScript$2(AmmoniteBuildServer.scala:371)
+	at scala.Option.getOrElse(Option.scala:189)
+	at ammonite.interp.script.AmmoniteBuildServer.compileScript(AmmoniteBuildServer.scala:368)
+	at ammonite.interp.script.AmmoniteBuildServer.$anonfun$compileScript$6(AmmoniteBuildServer.scala:392)
+	at ammonite.interp.script.ScriptCompiler.$anonfun$compile$10(ScriptCompiler.scala:67)
+	at scala.util.Either.flatMap(Either.scala:341)
+	at ammonite.interp.script.ScriptCompiler.$anonfun$compile$7(ScriptCompiler.scala:62)
+	at scala.util.Either.flatMap(Either.scala:341)
+	at ammonite.interp.script.ScriptCompiler.$anonfun$compile$6(ScriptCompiler.scala:61)
+	at scala.util.Either.flatMap(Either.scala:341)
+	at ammonite.interp.script.ScriptCompiler.$anonfun$compile$1(ScriptCompiler.scala:49)
+	at scala.util.Either.flatMap(Either.scala:341)
+	at ammonite.interp.script.ScriptCompiler.compile(ScriptCompiler.scala:48)
+	at ammonite.interp.script.AmmoniteBuildServer.compileScript(AmmoniteBuildServer.scala:392)
+	at ammonite.interp.script.AmmoniteBuildServer.$anonfun$buildTargetCompile$3(AmmoniteBuildServer.scala:402)
+	at ammonite.interp.script.AmmoniteBuildServer.$anonfun$buildTargetCompile$3$adapted(AmmoniteBuildServer.scala:401)
+	at scala.collection.immutable.List.map(List.scala:293)
+	at ammonite.interp.script.AmmoniteBuildServer.$anonfun$buildTargetCompile$2(AmmoniteBuildServer.scala:401)
+	at scala.collection.immutable.List.flatMap(List.scala:366)
+	at ammonite.interp.script.AmmoniteBuildServer.$anonfun$buildTargetCompile$1(AmmoniteBuildServer.scala:400)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	... 5 more
+
+
+2020.12.15 21:29:36 ERROR Error re-importing Ammonite build
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+2020.12.15 21:30:08 WARN  Could not find java sources in None. Java symbols will not be available.
+2020.12.15 21:30:08 INFO  time: indexed workspace in 0.98s
+2020.12.15 21:30:28 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/WebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target WebCrawler.sc.
+2020.12.15 21:32:13 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/WebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target WebCrawler.sc.
+2020.12.15 21:35:57 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/WebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target WebCrawler.sc.
+2020.12.15 21:36:37 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/WebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target WebCrawler.sc.
+2020.12.15 21:36:37 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/WebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target WebCrawler.sc.
+2020.12.15 21:36:37 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/WebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target WebCrawler.sc.
+2020.12.15 21:46:58 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/WebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target WebCrawler.sc.
+2020.12.15 21:46:58 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/WebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target WebCrawler.sc.
+2020.12.15 22:15:53 INFO  disconnected: ammonite build server
+2020.12.15 22:15:53 WARN  no build target for: /home/lee/p/hos/c3/TestPrintMessages.sc
+2020.12.15 22:15:53 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/lee/.cache/metals/bsp.trace.json
+2020.12.15 22:15:54 INFO  Ammonite: Starting BSP server
+
+2020.12.15 22:15:54 INFO  Connected to Ammonite Build server v2.2.0-4-4bd225e
+2020.12.15 22:15:55 ERROR timeout: build server 'Ammonite' during shutdown
+2020.12.15 22:16:03 WARN  Could not find java sources in None. Java symbols will not be available.
+2020.12.15 22:16:03 INFO  time: indexed workspace in 1.06s
+2020.12.15 22:16:11 INFO  compiling c16/fetchlinksasync.sc
+2020.12.15 22:16:11 INFO  time: compiled FetchLinksAsync.sc in 0.83s
+2020.12.15 22:16:11 INFO  compiling c3/testprintmessages.sc
+2020.12.15 22:16:12 INFO  time: compiled TestPrintMessages.sc in 0.24s
+2020.12.15 22:16:22 INFO  disconnected: ammonite build server
+2020.12.15 22:16:22 WARN  no build target for: /home/lee/p/hos/c3/PrintMessages.sc
+2020.12.15 22:16:22 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/lee/.cache/metals/bsp.trace.json
+2020.12.15 22:16:23 INFO  Ammonite: Starting BSP server
+
+2020.12.15 22:16:23 INFO  Connected to Ammonite Build server v2.2.0-4-4bd225e
+2020.12.15 22:16:24 ERROR timeout: build server 'Ammonite' during shutdown
+2020.12.15 22:16:32 WARN  Could not find java sources in None. Java symbols will not be available.
+2020.12.15 22:16:32 INFO  time: indexed workspace in 1.02s
+2020.12.15 22:16:32 INFO  compiling c16/fetchlinksasync.sc
+2020.12.15 22:16:32 INFO  time: compiled FetchLinksAsync.sc in 0.92s
+2020.12.15 22:16:32 INFO  compiling c3/printmessages.sc
+2020.12.15 22:16:35 INFO  time: compiled PrintMessages.sc in 1.64s
+2020.12.15 22:16:35 INFO  compiling c3/testprintmessages.sc
+2020.12.15 22:16:35 INFO  time: compiled TestPrintMessages.sc in 0.23s
+something's wrong: no file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c3/PrintMessages/src/ammonite/$file/c3/PrintMessages.sc.scala in Array[ammonite.$file.c3.PrintMessages.Msg]RangePosition(file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c3/PrintMessages/src/ammonite/$file/c3/PrintMessages.sc.scala, 624, 624, 634)
+something's wrong: no file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c3/PrintMessages/src/ammonite/$file/c3/PrintMessages.sc.scala in Array[ammonite.$file.c3.PrintMessages.Msg]RangePosition(file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c3/PrintMessages/src/ammonite/$file/c3/PrintMessages.sc.scala, 624, 624, 634)
+something's wrong: no file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c3/PrintMessages/src/ammonite/$file/c3/PrintMessages.sc.scala in Option[<error>]RangePosition(file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c3/PrintMessages/src/ammonite/$file/c3/PrintMessages.sc.scala, 669, 669, 685)
+something's wrong: no file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c3/PrintMessages/src/ammonite/$file/c3/PrintMessages.sc.scala in Option[<error>]RangePosition(file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c3/PrintMessages/src/ammonite/$file/c3/PrintMessages.sc.scala, 669, 669, 678)
+something's wrong: no file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c3/PrintMessages/src/ammonite/$file/c3/PrintMessages.sc.scala in Option[Int]RangePosition(file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c3/PrintMessages/src/ammonite/$file/c3/PrintMessages.sc.scala, 669, 669, 680)
+something's wrong: no file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c3/PrintMessages/src/ammonite/$file/c3/PrintMessages.sc.scala in Option[Int]RangePosition(file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c3/PrintMessages/src/ammonite/$file/c3/PrintMessages.sc.scala, 669, 669, 680)
+something's wrong: no file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c3/PrintMessages/src/ammonite/$file/c3/PrintMessages.sc.scala in Option[Int]RangePosition(file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c3/PrintMessages/src/ammonite/$file/c3/PrintMessages.sc.scala, 669, 669, 680)
+something's wrong: no file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c3/PrintMessages/src/ammonite/$file/c3/PrintMessages.sc.scala in Array[ammonite.$file.c3.PrintMessages.Msg]RangePosition(file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c3/PrintMessages/src/ammonite/$file/c3/PrintMessages.sc.scala, 624, 624, 634)
+something's wrong: no file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c3/PrintMessages/src/ammonite/$file/c3/PrintMessages.sc.scala in Array[ammonite.$file.c3.PrintMessages.Msg]RangePosition(file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c3/PrintMessages/src/ammonite/$file/c3/PrintMessages.sc.scala, 624, 624, 634)
+something's wrong: no file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c3/PrintMessages/src/ammonite/$file/c3/PrintMessages.sc.scala in Array[ammonite.$file.c3.PrintMessages.Msg]RangePosition(file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c3/PrintMessages/src/ammonite/$file/c3/PrintMessages.sc.scala, 624, 624, 634)
+something's wrong: no file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c3/PrintMessages/src/ammonite/$file/c3/PrintMessages.sc.scala in Option[Int]RangePosition(file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c3/PrintMessages/src/ammonite/$file/c3/PrintMessages.sc.scala, 669, 669, 680)
+something's wrong: no file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c3/PrintMessages/src/ammonite/$file/c3/PrintMessages.sc.scala in Option[Int]RangePosition(file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c3/PrintMessages/src/ammonite/$file/c3/PrintMessages.sc.scala, 669, 669, 680)
+something's wrong: no file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c3/PrintMessages/src/ammonite/$file/c3/PrintMessages.sc.scala in Array[ammonite.$file.c3.PrintMessages.Msg]RangePosition(file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c3/PrintMessages/src/ammonite/$file/c3/PrintMessages.sc.scala, 624, 624, 634)
+2020.12.15 22:41:04 ERROR code navigation does not work for the file '/home/lee/p/hos/c3/TestPrintMessages.sc' because the SemanticDB compiler plugin is not enabled for the build target TestPrintMessages.sc.
+2020.12.15 22:41:06 INFO  compiling c3/printmessages.sc
+2020.12.15 22:41:06 INFO  time: compiled PrintMessages.sc in 0.27s
+2020.12.15 22:41:25 INFO  compiling c3/printmessages.sc
+2020.12.15 22:41:26 INFO  time: compiled PrintMessages.sc in 1.38s
+something's wrong: no file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c3/PrintMessages/src/ammonite/$file/c3/PrintMessages.sc.scala in Array[ammonite.$file.c3.PrintMessages.Msg]RangePosition(file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c3/PrintMessages/src/ammonite/$file/c3/PrintMessages.sc.scala, 624, 624, 634)
+2020.12.15 22:45:21 INFO  compiling c3/printmessages.sc
+2020.12.15 22:45:21 INFO  time: compiled PrintMessages.sc in 0.92s
+something's wrong: no file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c3/PrintMessages/src/ammonite/$file/c3/PrintMessages.sc.scala in Option[Int]RangePosition(file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c3/PrintMessages/src/ammonite/$file/c3/PrintMessages.sc.scala, 669, 669, 680)
+2020.12.15 22:48:44 ERROR code navigation does not work for the file '/home/lee/p/hos/c3/TestPrintMessages.sc' because the SemanticDB compiler plugin is not enabled for the build target TestPrintMessages.sc.
+2020.12.15 22:49:29 INFO  compiling c3/printmessages.sc
+2020.12.15 22:49:29 INFO  time: compiled PrintMessages.sc in 0.91s
+2020.12.15 22:49:31 INFO  compiling c3/testprintmessages.sc
+2020.12.15 22:49:31 INFO  time: compiled TestPrintMessages.sc in 89ms
+2020.12.15 22:50:04 INFO  compiling c3/testprintmessages.sc
+2020.12.15 22:50:04 INFO  time: compiled TestPrintMessages.sc in 0.13s
+something's wrong: no file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c3/PrintMessages/src/ammonite/$file/c3/PrintMessages.sc.scala in Option[Int]RangePosition(file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c3/PrintMessages/src/ammonite/$file/c3/PrintMessages.sc.scala, 669, 669, 680)
+2020.12.15 22:53:48 INFO  disconnected: ammonite build server
+2020.12.15 22:53:48 WARN  no build target for: /home/lee/p/hos/c3/TestContextManagers.sc
+2020.12.15 22:53:48 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/lee/.cache/metals/bsp.trace.json
+2020.12.15 22:53:49 INFO  Ammonite: Starting BSP server
+
+2020.12.15 22:53:49 INFO  Connected to Ammonite Build server v2.2.0-4-4bd225e
+2020.12.15 22:53:50 ERROR timeout: build server 'Ammonite' during shutdown
+2020.12.15 22:53:59 WARN  Could not find java sources in None. Java symbols will not be available.
+2020.12.15 22:53:59 INFO  time: indexed workspace in 1.07s
+2020.12.15 22:54:03 INFO  compiling c16/fetchlinksasync.sc
+2020.12.15 22:54:03 INFO  time: compiled FetchLinksAsync.sc in 0.82s
+2020.12.15 22:54:03 INFO  compiling c3/printmessages.sc
+2020.12.15 22:54:05 INFO  time: compiled PrintMessages.sc in 1.83s
+2020.12.15 22:54:05 INFO  compiling c3/testprintmessages.sc
+2020.12.15 22:54:05 INFO  time: compiled TestPrintMessages.sc in 0.16s
+2020.12.15 22:54:05 INFO  compiling c3/testcontextmanagers.sc
+2020.12.15 22:54:05 INFO  time: compiled TestContextManagers.sc in 0.17s
+2020.12.15 22:54:09 INFO  disconnected: ammonite build server
+2020.12.15 22:54:09 WARN  no build target for: /home/lee/p/hos/c3/ContextManagers.sc
+2020.12.15 22:54:09 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/lee/.cache/metals/bsp.trace.json
+2020.12.15 22:54:10 INFO  Ammonite: Starting BSP server
+
+2020.12.15 22:54:10 INFO  Connected to Ammonite Build server v2.2.0-4-4bd225e
+2020.12.15 22:54:11 ERROR timeout: build server 'Ammonite' during shutdown
+2020.12.15 22:54:19 WARN  Could not find java sources in None. Java symbols will not be available.
+2020.12.15 22:54:19 INFO  time: indexed workspace in 1s
+2020.12.15 22:54:19 INFO  compiling c16/fetchlinksasync.sc
+2020.12.15 22:54:19 INFO  time: compiled FetchLinksAsync.sc in 0.83s
+2020.12.15 22:54:19 INFO  compiling c3/printmessages.sc
+2020.12.15 22:54:22 INFO  time: compiled PrintMessages.sc in 1.99s
+2020.12.15 22:54:22 INFO  compiling c3/testprintmessages.sc
+2020.12.15 22:54:22 INFO  time: compiled TestPrintMessages.sc in 0.19s
+2020.12.15 22:54:22 INFO  compiling c3/contextmanagers.sc
+2020.12.15 22:54:22 INFO  time: compiled ContextManagers.sc in 0.69s
+2020.12.15 22:54:22 INFO  compiling c3/testcontextmanagers.sc
+2020.12.15 22:54:23 INFO  time: compiled TestContextManagers.sc in 0.16s
+Dec 15, 2020 10:56:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5494
+2020.12.15 22:56:11 INFO  compiling c3/contextmanagers.sc
+2020.12.15 22:56:11 INFO  time: compiled ContextManagers.sc in 0.12s
+Dec 15, 2020 10:56:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5528
+2020.12.15 22:56:53 INFO  compiling c3/contextmanagers.sc
+2020.12.15 22:56:53 INFO  time: compiled ContextManagers.sc in 0.76s
+something's wrong: no file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c3/ContextManagers/src/ammonite/$file/c3/ContextManagers.sc.scala in java.io.BufferedWriter => TRangePosition(file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c3/ContextManagers/src/ammonite/$file/c3/ContextManagers.sc.scala, 590, 613, 617)
+2020.12.15 23:06:52 INFO  compiling c3/contextmanagers.sc
+2020.12.15 23:06:52 INFO  time: compiled ContextManagers.sc in 0.84s
+something's wrong: no file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c3/ContextManagers/src/ammonite/$file/c3/ContextManagers.sc.scala in java.io.BufferedWriter => TRangePosition(file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c3/ContextManagers/src/ammonite/$file/c3/ContextManagers.sc.scala, 590, 613, 617)
+2020.12.15 23:10:14 INFO  compiling c3/contextmanagers.sc
+2020.12.15 23:10:14 INFO  time: compiled ContextManagers.sc in 0.8s
+2020.12.15 23:10:19 INFO  compiling c3/contextmanagers.sc
+2020.12.15 23:10:19 INFO  time: compiled ContextManagers.sc in 0.85s
+something's wrong: no file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/src/ammonite/$file/c16/WebCrawler.sc.scala in Seq[String]RangePosition(file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/src/ammonite/$file/c16/WebCrawler.sc.scala, 1196, 1196, 1207)
+2020.12.16 01:06:57 INFO  shutting down Metals
+2020.12.16 23:29:31 INFO  Started: Metals version 0.9.7 in workspace '/home/lee/p/hos' for client vscode.
+2020.12.16 23:29:32 INFO  time: initialize in 1.41s
+2020.12.16 23:29:33 WARN  Build server is not auto-connectable.
+2020.12.16 23:29:33 WARN  no build tool detected in workspace '/home/lee/p/hos'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.16 23:29:34 WARN  no build target for: /home/lee/p/hos/c16/TestWebCrawler.sc
+2020.12.16 23:29:34 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/lee/.cache/metals/bsp.trace.json
+2020.12.16 23:29:35 INFO  Ammonite: Starting BSP server
+
+2020.12.16 23:29:36 INFO  Connected to Ammonite Build server v2.2.0-4-4bd225e
+2020.12.16 23:29:37 INFO  no build target: using presentation compiler with only scala-library
+2020.12.16 23:29:46 WARN  Could not find java sources in None. Java symbols will not be available.
+2020.12.16 23:29:46 INFO  time: indexed workspace in 1.58s
+2020.12.16 23:29:57 INFO  compiling c16/fetchlinksasync.sc
+2020.12.16 23:29:57 INFO  time: compiled FetchLinksAsync.sc in 0.71s
+2020.12.16 23:31:29 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/TestWebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target TestWebCrawler.sc.
+2020.12.16 23:54:01 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/TestWebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target TestWebCrawler.sc.
+2020.12.16 23:55:23 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/TestWebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target TestWebCrawler.sc.
+2020.12.16 23:57:02 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/WebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target WebCrawler.sc.
+something's wrong: no file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/src/ammonite/$file/c16/WebCrawler.sc.scala in Set[String]RangePosition(file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/src/ammonite/$file/c16/WebCrawler.sc.scala, 1629, 1629, 1640)
+2020.12.16 23:58:04 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/WebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target WebCrawler.sc.
+2020.12.17 00:04:32 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/WebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target WebCrawler.sc.
+2020.12.17 00:04:32 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/WebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target WebCrawler.sc.
+2020.12.17 00:04:33 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/WebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target WebCrawler.sc.
+2020.12.17 00:04:33 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/WebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target WebCrawler.sc.
+something's wrong: no file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/src/ammonite/$file/c16/WebCrawler.sc.scala in Set[String]RangePosition(file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/src/ammonite/$file/c16/WebCrawler.sc.scala, 1629, 1629, 1640)
+2020.12.17 00:08:59 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/WebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target WebCrawler.sc.
+2020.12.17 00:09:14 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/TestWebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target TestWebCrawler.sc.
+2020.12.17 00:09:14 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/TestWebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target TestWebCrawler.sc.
+2020.12.17 00:09:15 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/TestWebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target TestWebCrawler.sc.
+2020.12.17 00:13:10 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/WebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target WebCrawler.sc.
+something's wrong: no file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/src/ammonite/$file/c16/WebCrawler.sc.scala in Seq[String]RangePosition(file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/src/ammonite/$file/c16/WebCrawler.sc.scala, 778, 778, 789)
+Dec 17, 2020 12:20:01 AM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: null
+something's wrong: no file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/src/ammonite/$file/c16/WebCrawler.sc.scala in Seq[String]RangePosition(file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/src/ammonite/$file/c16/WebCrawler.sc.scala, 1272, 1272, 1283)
+2020.12.17 00:25:54 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/WebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target WebCrawler.sc.
+2020.12.17 00:25:54 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/WebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target WebCrawler.sc.
+something's wrong: no file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/src/ammonite/$file/c16/WebCrawler.sc.scala in scala.concurrent.Promise[Set[String]]RangePosition(file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/src/ammonite/$file/c16/WebCrawler.sc.scala, 898, 898, 918)
+2020.12.17 00:29:35 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/TestWebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target TestWebCrawler.sc.
+2020.12.17 00:29:35 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/TestWebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target TestWebCrawler.sc.
+something's wrong: no file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/src/ammonite/$file/c16/WebCrawler.sc.scala in Seq[String]RangePosition(file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/src/ammonite/$file/c16/WebCrawler.sc.scala, 1319, 1319, 1330)
+2020.12.17 00:34:12 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/WebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target WebCrawler.sc.
+2020.12.17 00:34:19 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/WebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target WebCrawler.sc.
+2020.12.17 00:34:19 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/WebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target WebCrawler.sc.
+2020.12.17 00:34:24 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/WebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target WebCrawler.sc.
+Dec 17, 2020 12:38:00 AM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Dec 17, 2020 12:38:00 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:417)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:138)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:156)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.HoverProvider.typedHoverTreeAt(HoverProvider.scala:239)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:26)
+
+2020.12.17 00:38:08 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/WebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target WebCrawler.sc.
+2020.12.17 00:38:13 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/WebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target WebCrawler.sc.
+2020.12.17 00:39:42 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/WebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target WebCrawler.sc.
+2020.12.17 00:42:01 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/WebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target WebCrawler.sc.
+2020.12.17 00:45:35 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/WebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target WebCrawler.sc.
+2020.12.17 00:47:37 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/WebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target WebCrawler.sc.
+2020.12.17 00:47:39 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/WebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target WebCrawler.sc.
+2020.12.17 00:50:40 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/WebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target WebCrawler.sc.
+something's wrong: no file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/src/ammonite/$file/c16/WebCrawler.sc.scala in Set[String]RangePosition(file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/src/ammonite/$file/c16/WebCrawler.sc.scala, 2058, 2058, 2069)
+something's wrong: no file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/src/ammonite/$file/c16/WebCrawler.sc.scala in Seq[String]RangePosition(file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/src/ammonite/$file/c16/WebCrawler.sc.scala, 1454, 1454, 1465)

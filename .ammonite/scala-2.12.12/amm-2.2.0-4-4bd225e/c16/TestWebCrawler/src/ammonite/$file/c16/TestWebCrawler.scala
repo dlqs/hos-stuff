@@ -37,18 +37,18 @@ object TestWebCrawler{
 /*<script>*/import $file.$         , WebCrawler._
 import scala.concurrent._, duration.Duration.Inf
 
-val depth0Results = pprint.log(Await.result(fetchAllLinksAsync("Singapore", 0), Inf))
-val depth1Results = pprint.log(Await.result(fetchAllLinksAsync("Singapore", 1), Inf))
-val depth2Results = pprint.log(Await.result(fetchAllLinksAsync("Singapore", 2), Inf))
-//val depth3Results = pprint.log(Await.result(fetchAllLinksAsync("Singapore", 3), Inf))
+val depth0Results = pprint.log(Await.result(fetchAllLinksAsync("Singapore", 0, 16), Inf))
+val depth1Results = pprint.log(Await.result(fetchAllLinksAsync("Singapore", 1, 16), Inf))
+val depth2Results = pprint.log(Await.result(fetchAllLinksAsync("Singapore", 2, 16), Inf))
+val depth3Results = pprint.log(Await.result(fetchAllLinksAsync("Singapore", 3, 16), Inf))
 
-/*<amm>*/val res_5 = /*</amm>*/pprint.log(depth0Results.size)
-/*<amm>*/val res_6 = /*</amm>*/pprint.log(depth1Results.size)
-/*<amm>*/val res_7 = /*</amm>*/pprint.log(depth2Results.size)
-//pprint.log(depth3Results.size)
+/*<amm>*/val res_6 = /*</amm>*/pprint.log(depth0Results.size)
+/*<amm>*/val res_7 = /*</amm>*/pprint.log(depth1Results.size)
+/*<amm>*/val res_8 = /*</amm>*/pprint.log(depth2Results.size)
+/*<amm>*/val res_9 = /*</amm>*/pprint.log(depth3Results.size)
 
-/*<amm>*/val res_8 = /*</amm>*/assert(depth0Results == Set("Singapore"))
-/*<amm>*/val res_9 = /*</amm>*/assert(
+/*<amm>*/val res_10 = /*</amm>*/assert(depth0Results == Set("Singapore"))
+/*<amm>*/val res_11 = /*</amm>*/assert(
   depth1Results ==
   Set(
     "1954 National Service riots",
@@ -65,11 +65,11 @@ val depth2Results = pprint.log(Await.result(fetchAllLinksAsync("Singapore", 2), 
   )
 )
 
-/*<amm>*/val res_10 = /*</amm>*/assert(depth1Results.subsetOf(depth2Results))
-/*<amm>*/val res_11 = /*</amm>*/assert(depth1Results.size < depth2Results.size)
+/*<amm>*/val res_12 = /*</amm>*/assert(depth1Results.subsetOf(depth2Results))
+/*<amm>*/val res_13 = /*</amm>*/assert(depth1Results.size < depth2Results.size)
 
-//assert(depth2Results.subsetOf(depth3Results))
-//assert(depth2Results.size < depth3Results.size)
+/*<amm>*/val res_14 = /*</amm>*/assert(depth2Results.subsetOf(depth3Results))
+/*<amm>*/val res_15 = /*</amm>*/assert(depth2Results.size < depth3Results.size)
 /*</script>*/ /*<generated>*/
 def $main() = { scala.Iterator[String]() }
   override def toString = "TestWebCrawler"

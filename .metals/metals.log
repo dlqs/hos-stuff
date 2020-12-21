@@ -6913,3 +6913,1007 @@ java.lang.NullPointerException
 2020.12.17 00:50:40 ERROR code navigation does not work for the file '/home/lee/p/hos/c16/WebCrawler.sc' because the SemanticDB compiler plugin is not enabled for the build target WebCrawler.sc.
 something's wrong: no file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/src/ammonite/$file/c16/WebCrawler.sc.scala in Set[String]RangePosition(file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/src/ammonite/$file/c16/WebCrawler.sc.scala, 2058, 2058, 2069)
 something's wrong: no file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/src/ammonite/$file/c16/WebCrawler.sc.scala in Seq[String]RangePosition(file:///home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c16/WebCrawler/src/ammonite/$file/c16/WebCrawler.sc.scala, 1454, 1454, 1465)
+2020.12.18 21:53:23 INFO  disconnected: ammonite build server
+2020.12.18 21:53:23 WARN  no build target for: /home/lee/p/hos/c17/build.sc
+2020.12.18 21:53:23 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/lee/.cache/metals/bsp.trace.json
+2020.12.18 21:53:24 INFO  Ammonite: Starting BSP server
+
+2020.12.18 21:53:24 INFO  Connected to Ammonite Build server v2.2.0-4-4bd225e
+2020.12.18 21:53:25 ERROR timeout: build server 'Ammonite' during shutdown
+2020.12.18 21:53:34 WARN  Could not find java sources in None. Java symbols will not be available.
+2020.12.18 21:53:34 INFO  time: indexed workspace in 1.41s
+2020.12.18 21:53:34 INFO  compiling c17/build.sc
+2020.12.18 21:53:34 INFO  time: compiled build.sc in 0.81s
+2020.12.18 21:53:34 INFO  compiling c16/fetchlinksasync.sc
+2020.12.18 21:53:35 INFO  time: compiled FetchLinksAsync.sc in 0.43s
+2020.12.18 22:00:01 INFO  disconnected: ammonite build server
+2020.12.18 22:00:01 WARN  no build target for: /home/lee/p/hos/c17/Shared.sc
+2020.12.18 22:00:01 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/lee/.cache/metals/bsp.trace.json
+2020.12.18 22:00:02 INFO  Ammonite: Starting BSP server
+
+2020.12.18 22:00:02 INFO  Connected to Ammonite Build server v2.2.0-4-4bd225e
+2020.12.18 22:00:03 ERROR timeout: build server 'Ammonite' during shutdown
+2020.12.18 22:00:06 INFO  disconnected: ammonite build server
+2020.12.18 22:00:06 WARN  Error importing Ammonite script /home/lee/p/hos/c17/Shared.sc
+java.util.concurrent.ExecutionException: Boxed InterruptedException
+	at scala.concurrent.impl.Promise$.resolver(Promise.scala:86)
+	at scala.concurrent.impl.Promise$.scala$concurrent$impl$Promise$$resolveTry(Promise.scala:79)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:284)
+	at scala.concurrent.Promise.complete(Promise.scala:53)
+	at scala.concurrent.Promise.complete$(Promise.scala:52)
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:187)
+	at scala.concurrent.java8.FuturesConvertersImpl$P.accept(FutureConvertersImpl.scala:100)
+	at scala.concurrent.java8.FuturesConvertersImpl$P.accept(FutureConvertersImpl.scala:97)
+	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:859)
+	at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:837)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$register$3(BuildServerConnection.scala:217)
+	at scala.runtime.java8.JFunction0$mcZ$sp.apply(JFunction0$mcZ$sp.java:23)
+	at scala.util.Try$.apply(Try.scala:213)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$register$2(BuildServerConnection.scala:217)
+	at scala.meta.internal.metals.Cancelable$$anon$1.cancel(Cancelable.scala:18)
+	at scala.meta.internal.metals.Cancelable$.$anonfun$cancelAll$1(Cancelable.scala:29)
+	at scala.collection.immutable.List.foreach(List.scala:431)
+	at scala.meta.internal.metals.Cancelable$.cancelAll(Cancelable.scala:28)
+	at scala.meta.internal.metals.MutableCancelable.cancel(MutableCancelable.scala:25)
+	at scala.meta.internal.metals.BuildServerConnection.cancel(BuildServerConnection.scala:161)
+	at scala.meta.internal.metals.Cancelable$.$anonfun$cancelAll$1(Cancelable.scala:29)
+	at scala.collection.immutable.List.foreach(List.scala:431)
+	at scala.meta.internal.metals.Cancelable$.cancelAll(Cancelable.scala:28)
+	at scala.meta.internal.metals.MutableCancelable.cancel(MutableCancelable.scala:25)
+	at scala.meta.internal.metals.ammonite.Ammonite.disconnectOldBuildServer(Ammonite.scala:133)
+	at scala.meta.internal.metals.ammonite.Ammonite.start(Ammonite.scala:227)
+	at scala.meta.internal.metals.ammonite.Ammonite.doImport$1(Ammonite.scala:187)
+	at scala.meta.internal.metals.ammonite.Ammonite.maybeImport(Ammonite.scala:199)
+	at scala.meta.internal.metals.MetalsLanguageServer.didOpen(MetalsLanguageServer.scala:906)
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$register$3(BuildServerConnection.scala:217)
+	at scala.runtime.java8.JFunction0$mcZ$sp.apply(JFunction0$mcZ$sp.java:23)
+	at scala.util.Try$.apply(Try.scala:213)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$register$2(BuildServerConnection.scala:217)
+	at scala.meta.internal.metals.Cancelable$$anon$1.cancel(Cancelable.scala:18)
+	at scala.meta.internal.metals.Cancelable$.$anonfun$cancelAll$1(Cancelable.scala:29)
+	at scala.collection.immutable.List.foreach(List.scala:431)
+	at scala.meta.internal.metals.Cancelable$.cancelAll(Cancelable.scala:28)
+	at scala.meta.internal.metals.MutableCancelable.cancel(MutableCancelable.scala:25)
+	at scala.meta.internal.metals.BuildServerConnection.cancel(BuildServerConnection.scala:161)
+	at scala.meta.internal.metals.Cancelable$.$anonfun$cancelAll$1(Cancelable.scala:29)
+	at scala.collection.immutable.List.foreach(List.scala:431)
+	at scala.meta.internal.metals.Cancelable$.cancelAll(Cancelable.scala:28)
+	at scala.meta.internal.metals.MutableCancelable.cancel(MutableCancelable.scala:25)
+	at scala.meta.internal.metals.ammonite.Ammonite.disconnectOldBuildServer(Ammonite.scala:133)
+	at scala.meta.internal.metals.ammonite.Ammonite.start(Ammonite.scala:227)
+	at scala.meta.internal.metals.ammonite.Ammonite.doImport$1(Ammonite.scala:187)
+	at scala.meta.internal.metals.ammonite.Ammonite.maybeImport(Ammonite.scala:199)
+	at scala.meta.internal.metals.MetalsLanguageServer.didOpen(MetalsLanguageServer.scala:906)
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+2020.12.18 22:00:06 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/lee/.cache/metals/bsp.trace.json
+2020.12.18 22:00:07 INFO  Ammonite: Starting BSP server
+
+2020.12.18 22:00:07 INFO  Connected to Ammonite Build server v2.2.0-4-4bd225e
+2020.12.18 22:00:08 ERROR timeout: build server 'Ammonite' during shutdown
+2020.12.18 22:00:15 WARN  Could not find java sources in None. Java symbols will not be available.
+2020.12.18 22:00:15 INFO  time: indexed workspace in 1.32s
+2020.12.18 22:02:44 INFO  compiling c17/build.sc
+2020.12.18 22:02:44 INFO  time: compiled build.sc in 0.65s
+2020.12.18 22:13:10 INFO  disconnected: ammonite build server
+2020.12.18 22:13:10 WARN  no build target for: /home/lee/p/hos/c17/shared/src/Shared.sc
+2020.12.18 22:13:10 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/lee/.cache/metals/bsp.trace.json
+2020.12.18 22:13:11 INFO  Ammonite: Starting BSP server
+
+2020.12.18 22:13:11 INFO  Connected to Ammonite Build server v2.2.0-4-4bd225e
+2020.12.18 22:13:12 ERROR timeout: build server 'Ammonite' during shutdown
+2020.12.18 22:13:15 INFO  compiling c17/build.sc
+2020.12.18 22:13:19 WARN  Could not find java sources in None. Java symbols will not be available.
+2020.12.18 22:13:19 INFO  time: indexed workspace in 1.66s
+2020.12.18 22:14:00 INFO  compiling c17/shared/src/shared.sc
+2020.12.18 22:14:00 INFO  Ammonite: Error: /home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c17/shared/src/Shared/target/META-INF/semanticdb/ammonite/$file/c17/shared/src/Shared_0.scala.semanticdb not found (for /home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c17/shared/src/Shared/target/META-INF/semanticdb/c17/shared/src/Shared.sc.semanticdb)
+
+2020.12.18 22:14:00 INFO  time: compiled Shared.sc in 0.16s
+2020.12.18 22:15:17 INFO  disconnected: ammonite build server
+2020.12.18 22:15:17 WARN  no build target for: /home/lee/p/hos/c17/agent/src/Agent.sc
+2020.12.18 22:15:18 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/lee/.cache/metals/bsp.trace.json
+2020.12.18 22:15:19 INFO  Ammonite: Starting BSP server
+
+2020.12.18 22:15:19 INFO  Connected to Ammonite Build server v2.2.0-4-4bd225e
+2020.12.18 22:15:19 ERROR timeout: build server 'Ammonite' during shutdown
+2020.12.18 22:15:27 WARN  Could not find java sources in None. Java symbols will not be available.
+2020.12.18 22:15:27 INFO  time: indexed workspace in 1.39s
+2020.12.18 22:15:40 INFO  compiling c17/build.sc
+Dec 18, 2020 10:15:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.NoSuchFileException: /home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c17/agent/src/Agent/src/ammonite/$file/c17/agent/src/Agent.scala
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:370)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:421)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3205)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.mtags.CommonMtagsEnrichments$XtensionAbsolutePath.toInput(CommonMtagsEnrichments.scala:395)
+	at scala.meta.internal.metals.ammonite.Ammonite.$anonfun$generatedScalaInputForPc$1(Ammonite.scala:305)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.metals.ammonite.Ammonite.generatedScalaInputForPc(Ammonite.scala:302)
+	at scala.meta.internal.metals.Compilers.$anonfun$ammoniteInputPosOpt$3(Compilers.scala:496)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.Compilers.ammoniteInputPosOpt(Compilers.scala:489)
+	at scala.meta.internal.metals.Compilers.sourceAdjustments(Compilers.scala:536)
+	at scala.meta.internal.metals.Compilers.withPCAndAdjustLsp(Compilers.scala:514)
+	at scala.meta.internal.metals.Compilers.hover(Compilers.scala:319)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$hover$1(MetalsLanguageServer.scala:1200)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.hover(MetalsLanguageServer.scala:1198)
+	... 15 more
+
+2020.12.18 22:15:40 INFO  time: compiled build.sc in 0.69s
+2020.12.18 22:15:40 INFO  compiling c17/shared/src/shared.sc
+2020.12.18 22:15:40 INFO  Ammonite: Error: /home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c17/shared/src/Shared/target/META-INF/semanticdb/ammonite/$file/c17/shared/src/Shared_0.scala.semanticdb not found (for /home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c17/shared/src/Shared/target/META-INF/semanticdb/c17/shared/src/Shared.sc.semanticdb)
+
+2020.12.18 22:15:40 INFO  time: compiled Shared.sc in 0.1s
+2020.12.18 22:15:40 INFO  compiling c17/agent/src/agent.sc
+2020.12.18 22:15:40 INFO  Ammonite: Error: /home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c17/agent/src/Agent/target/META-INF/semanticdb/ammonite/$file/c17/agent/src/Agent_0.scala.semanticdb not found (for /home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c17/agent/src/Agent/target/META-INF/semanticdb/c17/agent/src/Agent.sc.semanticdb)
+
+2020.12.18 22:15:40 INFO  time: compiled Agent.sc in 78ms
+Dec 18, 2020 10:15:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.NoSuchFileException: /home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c17/agent/src/Agent/src/ammonite/$file/c17/agent/src/Agent.scala
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:370)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:421)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3205)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.mtags.CommonMtagsEnrichments$XtensionAbsolutePath.toInput(CommonMtagsEnrichments.scala:395)
+	at scala.meta.internal.metals.ammonite.Ammonite.$anonfun$generatedScalaInputForPc$1(Ammonite.scala:305)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.metals.ammonite.Ammonite.generatedScalaInputForPc(Ammonite.scala:302)
+	at scala.meta.internal.metals.Compilers.$anonfun$ammoniteInputPosOpt$3(Compilers.scala:496)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.Compilers.ammoniteInputPosOpt(Compilers.scala:489)
+	at scala.meta.internal.metals.Compilers.sourceAdjustments(Compilers.scala:536)
+	at scala.meta.internal.metals.Compilers.withPCAndAdjustLsp(Compilers.scala:514)
+	at scala.meta.internal.metals.Compilers.hover(Compilers.scala:319)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$hover$1(MetalsLanguageServer.scala:1200)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.hover(MetalsLanguageServer.scala:1198)
+	... 15 more
+
+Dec 18, 2020 10:15:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.NoSuchFileException: /home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c17/agent/src/Agent/src/ammonite/$file/c17/agent/src/Agent.scala
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:370)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:421)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3205)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.mtags.CommonMtagsEnrichments$XtensionAbsolutePath.toInput(CommonMtagsEnrichments.scala:395)
+	at scala.meta.internal.metals.ammonite.Ammonite.$anonfun$generatedScalaInputForPc$1(Ammonite.scala:305)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.metals.ammonite.Ammonite.generatedScalaInputForPc(Ammonite.scala:302)
+	at scala.meta.internal.metals.Compilers.$anonfun$ammoniteInputPosOpt$3(Compilers.scala:496)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.Compilers.ammoniteInputPosOpt(Compilers.scala:489)
+	at scala.meta.internal.metals.Compilers.sourceAdjustments(Compilers.scala:536)
+	at scala.meta.internal.metals.Compilers.withPCAndAdjustLsp(Compilers.scala:514)
+	at scala.meta.internal.metals.Compilers.hover(Compilers.scala:319)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$hover$1(MetalsLanguageServer.scala:1200)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.hover(MetalsLanguageServer.scala:1198)
+	... 15 more
+
+Dec 18, 2020 10:15:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.NoSuchFileException: /home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c17/agent/src/Agent/src/ammonite/$file/c17/agent/src/Agent.scala
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:370)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:421)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3205)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.mtags.CommonMtagsEnrichments$XtensionAbsolutePath.toInput(CommonMtagsEnrichments.scala:395)
+	at scala.meta.internal.metals.ammonite.Ammonite.$anonfun$generatedScalaInputForPc$1(Ammonite.scala:305)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.metals.ammonite.Ammonite.generatedScalaInputForPc(Ammonite.scala:302)
+	at scala.meta.internal.metals.Compilers.$anonfun$ammoniteInputPosOpt$3(Compilers.scala:496)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.Compilers.ammoniteInputPosOpt(Compilers.scala:489)
+	at scala.meta.internal.metals.Compilers.sourceAdjustments(Compilers.scala:536)
+	at scala.meta.internal.metals.Compilers.withPCAndAdjustLsp(Compilers.scala:514)
+	at scala.meta.internal.metals.Compilers.hover(Compilers.scala:319)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$hover$1(MetalsLanguageServer.scala:1200)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.hover(MetalsLanguageServer.scala:1198)
+	... 15 more
+
+Dec 18, 2020 10:15:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.NoSuchFileException: /home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c17/agent/src/Agent/src/ammonite/$file/c17/agent/src/Agent.scala
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:370)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:421)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3205)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.mtags.CommonMtagsEnrichments$XtensionAbsolutePath.toInput(CommonMtagsEnrichments.scala:395)
+	at scala.meta.internal.metals.ammonite.Ammonite.$anonfun$generatedScalaInputForPc$1(Ammonite.scala:305)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.metals.ammonite.Ammonite.generatedScalaInputForPc(Ammonite.scala:302)
+	at scala.meta.internal.metals.Compilers.$anonfun$ammoniteInputPosOpt$3(Compilers.scala:496)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.Compilers.ammoniteInputPosOpt(Compilers.scala:489)
+	at scala.meta.internal.metals.Compilers.sourceAdjustments(Compilers.scala:536)
+	at scala.meta.internal.metals.Compilers.withPCAndAdjustLsp(Compilers.scala:514)
+	at scala.meta.internal.metals.Compilers.hover(Compilers.scala:319)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$hover$1(MetalsLanguageServer.scala:1200)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.hover(MetalsLanguageServer.scala:1198)
+	... 15 more
+
+2020.12.18 22:16:13 INFO  compiling c17/agent/src/agent.sc
+2020.12.18 22:16:13 INFO  Ammonite: Error: /home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c17/agent/src/Agent/target/META-INF/semanticdb/ammonite/$file/c17/agent/src/Agent_0.scala.semanticdb not found (for /home/lee/p/hos/.ammonite/scala-2.12.12/amm-2.2.0-4-4bd225e/c17/agent/src/Agent/target/META-INF/semanticdb/c17/agent/src/Agent.sc.semanticdb)
+
+2020.12.18 22:16:13 INFO  time: compiled Agent.sc in 69ms
+2020.12.18 22:17:46 WARN  no build target for: /home/lee/p/hos/c17/17.6.scala
+2020.12.18 22:18:04 WARN  no build target for: /home/lee/p/hos/c17/shared/src/Shared.scala
+2020.12.18 22:18:14 WARN  no build target for: /home/lee/p/hos/c17/agent/src/Agent.scala
+2020.12.18 22:18:16 INFO  disconnected: ammonite build server
+2020.12.18 22:18:16 WARN  no build target for: /home/lee/p/hos/c17/sync/src/Sync.sc
+2020.12.18 22:18:16 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/lee/.cache/metals/bsp.trace.json
+2020.12.18 22:18:17 INFO  Ammonite: Starting BSP server
+
+2020.12.18 22:18:17 INFO  Connected to Ammonite Build server v2.2.0-4-4bd225e
+2020.12.18 22:18:18 ERROR timeout: build server 'Ammonite' during shutdown
+2020.12.18 22:18:21 WARN  no build target for: /home/lee/p/hos/c17/sync/src/Sync.scala
+2020.12.18 22:18:25 WARN  Could not find java sources in None. Java symbols will not be available.
+2020.12.18 22:18:25 INFO  time: indexed workspace in 1.62s
+2020.12.18 22:18:25 WARN  Could not find java sources in None. Java symbols will not be available.
+2020.12.18 22:18:25 INFO  time: indexed workspace in 1.69s
+2020.12.18 22:18:26 INFO  compiling c17/build.sc
+2020.12.18 22:18:26 INFO  time: compiled build.sc in 0.77s
+2020.12.18 22:18:50 WARN  no build target for: /home/lee/p/hos/c17/sync/src/Sync.scala
+2020.12.18 22:27:42 WARN  no build target for: /home/lee/p/hos/c17/sync/src/Sync.scala
+2020.12.18 22:29:46 WARN  no build target for: /home/lee/p/hos/c17/shared/src/Rpc.scala
+2020.12.18 22:39:25 WARN  no build tool detected in workspace '/home/lee/p/hos'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.18 22:39:26 WARN  no build tool detected in workspace '/home/lee/p/hos'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.18 22:55:50 WARN  no build tool detected in workspace '/home/lee/p/hos'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.18 22:55:50 WARN  no build target for: /home/lee/p/hos/c17/sync/src/Sync.scala
+Dec 18, 2020 10:56:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5501
+Dec 18, 2020 10:56:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5507
+something's wrong: no file:///home/lee/p/hos/c17/shared/src/Rpc.scala in Array[Byte]RangePosition(file:///home/lee/p/hos/c17/shared/src/Rpc.scala, 540, 540, 551)
+something's wrong: no file:///home/lee/p/hos/c17/sync/src/Sync.scala in Option[<error>]RangePosition(file:///home/lee/p/hos/c17/sync/src/Sync.scala, 626, 626, 637)
+something's wrong: no file:///home/lee/p/hos/c17/sync/src/Sync.scala in () => TRangePosition(file:///home/lee/p/hos/c17/sync/src/Sync.scala, 707, 710, 714)
+something's wrong: no file:///home/lee/p/hos/c17/sync/src/Sync.scala in (<error>, () => T)RangePosition(file:///home/lee/p/hos/c17/sync/src/Sync.scala, 694, 694, 715)
+2020.12.18 23:12:02 WARN  no build target for: /home/lee/p/hos/c17/sync/test/src/SyncTests.scala
+2020.12.18 23:12:14 WARN  no build target for: /home/lee/p/hos/c17/sync/test/src/SyncTests.scala
+2020.12.18 23:12:22 WARN  no build target for: /home/lee/p/hos/c17/sync/test/src/SyncTests.scala
+2020.12.18 23:13:11 WARN  no build target for: /home/lee/p/hos/c17/shared/src/Rpc.scala
+Dec 18, 2020 11:17:53 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Dec 18, 2020 11:17:53 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+scala.MatchError: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+	at scala.tools.nsc.typechecker.Unapplies.constrParamss(Unapplies.scala:64)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth(Unapplies.scala:141)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth$(Unapplies.scala:138)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.factoryMeth(MetalsGlobal.scala:58)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper(MethodSynthesis.scala:229)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper$(MethodSynthesis.scala:228)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterImplicitWrapper(Namers.scala:58)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym(Global.scala:94)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym$(Global.scala:80)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$$anon$2.enterExistingSym(Global.scala:51)
+	at scala.tools.nsc.typechecker.Namers$Namer.standardEnterSym(Namers.scala:298)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym(AnalyzerPlugins.scala:479)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym$(AnalyzerPlugins.scala:478)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.pluginsEnterSym(MetalsGlobal.scala:58)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterSym(Namers.scala:272)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSym(Typers.scala:1933)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$enterSyms$1(Typers.scala:1928)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSyms(Typers.scala:1928)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTemplate(Typers.scala:1990)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedModuleDef(Typers.scala:1883)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5645)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5724)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStat$1(Typers.scala:5788)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$typedStats$10(Typers.scala:3335)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3335)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedPackageDef$1(Typers.scala:5354)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5647)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5724)
+	at scala.tools.nsc.typechecker.Analyzer$typerFactory$TyperPhase.apply(Analyzer.scala:115)
+	at scala.tools.nsc.Global$GlobalPhase.applyPhase(Global.scala:454)
+	at scala.tools.nsc.interactive.Global$TyperRun.$anonfun$applyPhase$1(Global.scala:1340)
+	at scala.tools.nsc.interactive.Global$TyperRun.applyPhase(Global.scala:1340)
+	at scala.tools.nsc.interactive.Global$TyperRun.typeCheck(Global.scala:1333)
+	at scala.tools.nsc.interactive.Global.typeCheck(Global.scala:665)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:814)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1225)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:399)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+
+Dec 18, 2020 11:18:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.classifiers.`package`.XtensionClassifiable[scala.meta.tokens.Token](ScalametaParser.this.token)(scala.meta.tokens.Token.classifiable[scala.meta.tokens.Token]).isNot[scala.meta.tokens.Token.KwCase](Token.this.KwCase.classifier[scala.meta.tokens.Token]).&&(org.scalameta.`package`.debug(ScalametaParser.this.token))
+found that scala.meta.classifiers.`package`.XtensionClassifiable[scala.meta.tokens.Token](ScalametaParser.this.token)(scala.meta.tokens.Token.classifiable[scala.meta.tokens.Token]).isNot[scala.meta.tokens.Token.KwCase](Token.this.KwCase.classifier[scala.meta.tokens.Token]) is false
+where ScalametaParser = scala.meta.internal.parsers.ScalametaParser@695fe0cb
+where ScalametaParser.this.token = case
+where Token = scala.meta.tokens.Token$@49d2254a
+java.util.concurrent.CompletionException: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.classifiers.`package`.XtensionClassifiable[scala.meta.tokens.Token](ScalametaParser.this.token)(scala.meta.tokens.Token.classifiable[scala.meta.tokens.Token]).isNot[scala.meta.tokens.Token.KwCase](Token.this.KwCase.classifier[scala.meta.tokens.Token]).&&(org.scalameta.`package`.debug(ScalametaParser.this.token))
+found that scala.meta.classifiers.`package`.XtensionClassifiable[scala.meta.tokens.Token](ScalametaParser.this.token)(scala.meta.tokens.Token.classifiable[scala.meta.tokens.Token]).isNot[scala.meta.tokens.Token.KwCase](Token.this.KwCase.classifier[scala.meta.tokens.Token]) is false
+where ScalametaParser = scala.meta.internal.parsers.ScalametaParser@695fe0cb
+where ScalametaParser.this.token = case
+where Token = scala.meta.tokens.Token$@49d2254a
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1702)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.classifiers.`package`.XtensionClassifiable[scala.meta.tokens.Token](ScalametaParser.this.token)(scala.meta.tokens.Token.classifiable[scala.meta.tokens.Token]).isNot[scala.meta.tokens.Token.KwCase](Token.this.KwCase.classifier[scala.meta.tokens.Token]).&&(org.scalameta.`package`.debug(ScalametaParser.this.token))
+found that scala.meta.classifiers.`package`.XtensionClassifiable[scala.meta.tokens.Token](ScalametaParser.this.token)(scala.meta.tokens.Token.classifiable[scala.meta.tokens.Token]).isNot[scala.meta.tokens.Token.KwCase](Token.this.KwCase.classifier[scala.meta.tokens.Token]) is false
+where ScalametaParser = scala.meta.internal.parsers.ScalametaParser@695fe0cb
+where ScalametaParser.this.token = case
+where Token = scala.meta.tokens.Token$@49d2254a
+	at org.scalameta.invariants.InvariantFailedException$.raise(Exceptions.scala:19)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$caseClause$1(ScalametaParser.scala:2820)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.caseClause(ScalametaParser.scala:2819)
+	at scala.meta.internal.parsers.ScalametaParser.caseClauses(ScalametaParser.scala:2860)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$matchClause$4(ScalametaParser.scala:2025)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:611)
+	at scala.meta.internal.parsers.ScalametaParser.inBracesOrError(ScalametaParser.scala:618)
+	at scala.meta.internal.parsers.ScalametaParser.inBracesOrNil(ScalametaParser.scala:633)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$matchClause$3(ScalametaParser.scala:2025)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.matchClause(ScalametaParser.scala:2025)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$1(ScalametaParser.scala:2189)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:2033)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockStatSeq$2(ScalametaParser.scala:4668)
+	at scala.meta.internal.parsers.ScalametaParser.stat(ScalametaParser.scala:4514)
+	at scala.meta.internal.parsers.ScalametaParser.blockStatSeq(ScalametaParser.scala:4668)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$block$1(ScalametaParser.scala:2816)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.block(ScalametaParser.scala:2815)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockExpr$1(ScalametaParser.scala:2811)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.blockExpr(ScalametaParser.scala:2809)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$4(ScalametaParser.scala:2629)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:611)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$1(ScalametaParser.scala:2629)
+	at scala.meta.internal.parsers.ScalametaParser.atPosTry(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.autoPosTry(ScalametaParser.scala:707)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr0(ScalametaParser.scala:2607)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr(ScalametaParser.scala:2605)
+	at scala.meta.internal.parsers.ScalametaParser.prefixExpr(ScalametaParser.scala:2589)
+	at scala.meta.internal.parsers.ScalametaParser.postfixExpr(ScalametaParser.scala:2569)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$15(ScalametaParser.scala:2167)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$1(ScalametaParser.scala:2167)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:2033)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1977)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$1(ScalametaParser.scala:2064)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:2033)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1977)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$1(ScalametaParser.scala:2104)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:2033)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockStatSeq$2(ScalametaParser.scala:4668)
+	at scala.meta.internal.parsers.ScalametaParser.stat(ScalametaParser.scala:4514)
+	at scala.meta.internal.parsers.ScalametaParser.blockStatSeq(ScalametaParser.scala:4668)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$block$1(ScalametaParser.scala:2816)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.block(ScalametaParser.scala:2815)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockExpr$1(ScalametaParser.scala:2811)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.blockExpr(ScalametaParser.scala:2809)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$4(ScalametaParser.scala:2629)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:611)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$1(ScalametaParser.scala:2629)
+	at scala.meta.internal.parsers.ScalametaParser.atPosTry(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.autoPosTry(ScalametaParser.scala:707)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr0(ScalametaParser.scala:2607)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr(ScalametaParser.scala:2605)
+	at scala.meta.internal.parsers.ScalametaParser.prefixExpr(ScalametaParser.scala:2589)
+	at scala.meta.internal.parsers.ScalametaParser.postfixExpr(ScalametaParser.scala:2569)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$15(ScalametaParser.scala:2167)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$1(ScalametaParser.scala:2167)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:2033)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1977)
+	at scala.meta.internal.parsers.ScalametaParser.exprMaybeIndented(ScalametaParser.scala:2005)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$funDefRest$1(ScalametaParser.scala:3975)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.funDefRest(ScalametaParser.scala:3917)
+	at scala.meta.internal.parsers.ScalametaParser.funDefOrDclOrExtensionOrSecondaryCtor(ScalametaParser.scala:3869)
+	at scala.meta.internal.parsers.ScalametaParser.defOrDclOrSecondaryCtor(ScalametaParser.scala:3755)
+	at scala.meta.internal.parsers.ScalametaParser.nonLocalDefOrDcl(ScalametaParser.scala:3740)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$templateStat$1.applyOrElse(ScalametaParser.scala:4595)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$templateStat$1.applyOrElse(ScalametaParser.scala:4589)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at scala.meta.internal.parsers.ScalametaParser.statSeq(ScalametaParser.scala:4533)
+	at scala.meta.internal.parsers.ScalametaParser.templateStats(ScalametaParser.scala:4588)
+	at scala.meta.internal.parsers.ScalametaParser.templateStatSeq(ScalametaParser.scala:4585)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateBody$1(ScalametaParser.scala:4442)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:611)
+	at scala.meta.internal.parsers.ScalametaParser.templateBody(ScalametaParser.scala:4442)
+	at scala.meta.internal.parsers.ScalametaParser.templateBodyOpt(ScalametaParser.scala:4447)
+	at scala.meta.internal.parsers.ScalametaParser.templateOpt(ScalametaParser.scala:4435)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$objectDef$1(ScalametaParser.scala:4177)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.objectDef(ScalametaParser.scala:4169)
+	at scala.meta.internal.parsers.ScalametaParser.tmplDef(ScalametaParser.scala:4053)
+	at scala.meta.internal.parsers.ScalametaParser.topLevelTmplDef(ScalametaParser.scala:4035)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$topStat$1.applyOrElse(ScalametaParser.scala:4555)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$topStat$1.applyOrElse(ScalametaParser.scala:4543)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at scala.meta.internal.parsers.ScalametaParser.statSeq(ScalametaParser.scala:4533)
+	at scala.meta.internal.parsers.ScalametaParser.topStatSeq(ScalametaParser.scala:4542)
+	at scala.meta.internal.parsers.ScalametaParser.bracelessPackageStats$1(ScalametaParser.scala:4745)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$9(ScalametaParser.scala:4751)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$1(ScalametaParser.scala:4751)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.batchSource(ScalametaParser.scala:4719)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$source$1(ScalametaParser.scala:4702)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.source(ScalametaParser.scala:4701)
+	at scala.meta.internal.parsers.ScalametaParser.entrypointSource(ScalametaParser.scala:4707)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$parseSource$2(ScalametaParser.scala:137)
+	at scala.meta.internal.parsers.ScalametaParser.parseRule(ScalametaParser.scala:47)
+	at scala.meta.internal.parsers.ScalametaParser.parseSource(ScalametaParser.scala:137)
+	at scala.meta.parsers.Parse$.$anonfun$parseSource$1(Parse.scala:29)
+	at scala.meta.internal.parsers.ScalametaParser$$anon$245.apply(ScalametaParser.scala:4763)
+	at scala.meta.parsers.Api$XtensionParseDialectInput.parse(Api.scala:25)
+	at scala.meta.internal.metals.Trees.$anonfun$parse$1(Trees.scala:66)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.metals.Trees.parse(Trees.scala:64)
+	at scala.meta.internal.metals.Trees.didChange(Trees.scala:38)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$didChange$1(ScalaPresentationCompiler.scala:128)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)
+	... 3 more
+
+2020.12.18 23:20:21 WARN  no build tool detected in workspace '/home/lee/p/hos'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.18 23:20:21 WARN  no build target for: /home/lee/p/hos/c17/agent/src/Agent.scala
+2020.12.18 23:25:05 WARN  no build target for: /home/lee/p/hos/c17/sync/src/Sync.scala
+2020.12.18 23:25:51 WARN  no build target for: /home/lee/p/hos/c17/shared/src/Rpc.scala
+Dec 18, 2020 11:25:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.classifiers.`package`.XtensionClassifiable[scala.meta.tokens.Token](ScalametaParser.this.token)(scala.meta.tokens.Token.classifiable[scala.meta.tokens.Token]).isNot[scala.meta.tokens.Token.KwCase](Token.this.KwCase.classifier[scala.meta.tokens.Token]).&&(org.scalameta.`package`.debug(ScalametaParser.this.token))
+found that scala.meta.classifiers.`package`.XtensionClassifiable[scala.meta.tokens.Token](ScalametaParser.this.token)(scala.meta.tokens.Token.classifiable[scala.meta.tokens.Token]).isNot[scala.meta.tokens.Token.KwCase](Token.this.KwCase.classifier[scala.meta.tokens.Token]) is false
+where ScalametaParser = scala.meta.internal.parsers.ScalametaParser@2be83156
+where ScalametaParser.this.token = case
+where Token = scala.meta.tokens.Token$@49d2254a
+java.util.concurrent.CompletionException: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.classifiers.`package`.XtensionClassifiable[scala.meta.tokens.Token](ScalametaParser.this.token)(scala.meta.tokens.Token.classifiable[scala.meta.tokens.Token]).isNot[scala.meta.tokens.Token.KwCase](Token.this.KwCase.classifier[scala.meta.tokens.Token]).&&(org.scalameta.`package`.debug(ScalametaParser.this.token))
+found that scala.meta.classifiers.`package`.XtensionClassifiable[scala.meta.tokens.Token](ScalametaParser.this.token)(scala.meta.tokens.Token.classifiable[scala.meta.tokens.Token]).isNot[scala.meta.tokens.Token.KwCase](Token.this.KwCase.classifier[scala.meta.tokens.Token]) is false
+where ScalametaParser = scala.meta.internal.parsers.ScalametaParser@2be83156
+where ScalametaParser.this.token = case
+where Token = scala.meta.tokens.Token$@49d2254a
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1702)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.classifiers.`package`.XtensionClassifiable[scala.meta.tokens.Token](ScalametaParser.this.token)(scala.meta.tokens.Token.classifiable[scala.meta.tokens.Token]).isNot[scala.meta.tokens.Token.KwCase](Token.this.KwCase.classifier[scala.meta.tokens.Token]).&&(org.scalameta.`package`.debug(ScalametaParser.this.token))
+found that scala.meta.classifiers.`package`.XtensionClassifiable[scala.meta.tokens.Token](ScalametaParser.this.token)(scala.meta.tokens.Token.classifiable[scala.meta.tokens.Token]).isNot[scala.meta.tokens.Token.KwCase](Token.this.KwCase.classifier[scala.meta.tokens.Token]) is false
+where ScalametaParser = scala.meta.internal.parsers.ScalametaParser@2be83156
+where ScalametaParser.this.token = case
+where Token = scala.meta.tokens.Token$@49d2254a
+	at org.scalameta.invariants.InvariantFailedException$.raise(Exceptions.scala:19)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$caseClause$1(ScalametaParser.scala:2820)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.caseClause(ScalametaParser.scala:2819)
+	at scala.meta.internal.parsers.ScalametaParser.caseClauses(ScalametaParser.scala:2860)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$matchClause$4(ScalametaParser.scala:2025)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:611)
+	at scala.meta.internal.parsers.ScalametaParser.inBracesOrError(ScalametaParser.scala:618)
+	at scala.meta.internal.parsers.ScalametaParser.inBracesOrNil(ScalametaParser.scala:633)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$matchClause$3(ScalametaParser.scala:2025)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.matchClause(ScalametaParser.scala:2025)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$1(ScalametaParser.scala:2189)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:2033)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockStatSeq$2(ScalametaParser.scala:4668)
+	at scala.meta.internal.parsers.ScalametaParser.stat(ScalametaParser.scala:4514)
+	at scala.meta.internal.parsers.ScalametaParser.blockStatSeq(ScalametaParser.scala:4668)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$block$1(ScalametaParser.scala:2816)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.block(ScalametaParser.scala:2815)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockExpr$1(ScalametaParser.scala:2811)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.blockExpr(ScalametaParser.scala:2809)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$4(ScalametaParser.scala:2629)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:611)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$1(ScalametaParser.scala:2629)
+	at scala.meta.internal.parsers.ScalametaParser.atPosTry(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.autoPosTry(ScalametaParser.scala:707)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr0(ScalametaParser.scala:2607)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr(ScalametaParser.scala:2605)
+	at scala.meta.internal.parsers.ScalametaParser.prefixExpr(ScalametaParser.scala:2589)
+	at scala.meta.internal.parsers.ScalametaParser.postfixExpr(ScalametaParser.scala:2569)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$15(ScalametaParser.scala:2167)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$1(ScalametaParser.scala:2167)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:2033)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1977)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$1(ScalametaParser.scala:2064)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:2033)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1977)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$1(ScalametaParser.scala:2104)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:2033)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockStatSeq$2(ScalametaParser.scala:4668)
+	at scala.meta.internal.parsers.ScalametaParser.stat(ScalametaParser.scala:4514)
+	at scala.meta.internal.parsers.ScalametaParser.blockStatSeq(ScalametaParser.scala:4668)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$block$1(ScalametaParser.scala:2816)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.block(ScalametaParser.scala:2815)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockExpr$1(ScalametaParser.scala:2811)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.blockExpr(ScalametaParser.scala:2809)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$4(ScalametaParser.scala:2629)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:611)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$1(ScalametaParser.scala:2629)
+	at scala.meta.internal.parsers.ScalametaParser.atPosTry(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.autoPosTry(ScalametaParser.scala:707)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr0(ScalametaParser.scala:2607)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr(ScalametaParser.scala:2605)
+	at scala.meta.internal.parsers.ScalametaParser.prefixExpr(ScalametaParser.scala:2589)
+	at scala.meta.internal.parsers.ScalametaParser.postfixExpr(ScalametaParser.scala:2569)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$15(ScalametaParser.scala:2167)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$1(ScalametaParser.scala:2167)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:2033)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1977)
+	at scala.meta.internal.parsers.ScalametaParser.exprMaybeIndented(ScalametaParser.scala:2005)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$funDefRest$1(ScalametaParser.scala:3975)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.funDefRest(ScalametaParser.scala:3917)
+	at scala.meta.internal.parsers.ScalametaParser.funDefOrDclOrExtensionOrSecondaryCtor(ScalametaParser.scala:3869)
+	at scala.meta.internal.parsers.ScalametaParser.defOrDclOrSecondaryCtor(ScalametaParser.scala:3755)
+	at scala.meta.internal.parsers.ScalametaParser.nonLocalDefOrDcl(ScalametaParser.scala:3740)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$templateStat$1.applyOrElse(ScalametaParser.scala:4595)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$templateStat$1.applyOrElse(ScalametaParser.scala:4589)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at scala.meta.internal.parsers.ScalametaParser.statSeq(ScalametaParser.scala:4533)
+	at scala.meta.internal.parsers.ScalametaParser.templateStats(ScalametaParser.scala:4588)
+	at scala.meta.internal.parsers.ScalametaParser.templateStatSeq(ScalametaParser.scala:4585)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateBody$1(ScalametaParser.scala:4442)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:611)
+	at scala.meta.internal.parsers.ScalametaParser.templateBody(ScalametaParser.scala:4442)
+	at scala.meta.internal.parsers.ScalametaParser.templateBodyOpt(ScalametaParser.scala:4447)
+	at scala.meta.internal.parsers.ScalametaParser.templateOpt(ScalametaParser.scala:4435)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$objectDef$1(ScalametaParser.scala:4177)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.objectDef(ScalametaParser.scala:4169)
+	at scala.meta.internal.parsers.ScalametaParser.tmplDef(ScalametaParser.scala:4053)
+	at scala.meta.internal.parsers.ScalametaParser.topLevelTmplDef(ScalametaParser.scala:4035)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$topStat$1.applyOrElse(ScalametaParser.scala:4555)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$topStat$1.applyOrElse(ScalametaParser.scala:4543)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at scala.meta.internal.parsers.ScalametaParser.statSeq(ScalametaParser.scala:4533)
+	at scala.meta.internal.parsers.ScalametaParser.topStatSeq(ScalametaParser.scala:4542)
+	at scala.meta.internal.parsers.ScalametaParser.bracelessPackageStats$1(ScalametaParser.scala:4745)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$9(ScalametaParser.scala:4751)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$1(ScalametaParser.scala:4751)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.batchSource(ScalametaParser.scala:4719)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$source$1(ScalametaParser.scala:4702)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.source(ScalametaParser.scala:4701)
+	at scala.meta.internal.parsers.ScalametaParser.entrypointSource(ScalametaParser.scala:4707)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$parseSource$2(ScalametaParser.scala:137)
+	at scala.meta.internal.parsers.ScalametaParser.parseRule(ScalametaParser.scala:47)
+	at scala.meta.internal.parsers.ScalametaParser.parseSource(ScalametaParser.scala:137)
+	at scala.meta.parsers.Parse$.$anonfun$parseSource$1(Parse.scala:29)
+	at scala.meta.internal.parsers.ScalametaParser$$anon$245.apply(ScalametaParser.scala:4763)
+	at scala.meta.parsers.Api$XtensionParseDialectInput.parse(Api.scala:25)
+	at scala.meta.internal.metals.Trees.$anonfun$parse$1(Trees.scala:66)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.metals.Trees.parse(Trees.scala:64)
+	at scala.meta.internal.metals.Trees.didChange(Trees.scala:38)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$didChange$1(ScalaPresentationCompiler.scala:128)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)
+	... 3 more
+
+Dec 18, 2020 11:25:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.classifiers.`package`.XtensionClassifiable[scala.meta.tokens.Token](ScalametaParser.this.token)(scala.meta.tokens.Token.classifiable[scala.meta.tokens.Token]).isNot[scala.meta.tokens.Token.KwCase](Token.this.KwCase.classifier[scala.meta.tokens.Token]).&&(org.scalameta.`package`.debug(ScalametaParser.this.token))
+found that scala.meta.classifiers.`package`.XtensionClassifiable[scala.meta.tokens.Token](ScalametaParser.this.token)(scala.meta.tokens.Token.classifiable[scala.meta.tokens.Token]).isNot[scala.meta.tokens.Token.KwCase](Token.this.KwCase.classifier[scala.meta.tokens.Token]) is false
+where ScalametaParser = scala.meta.internal.parsers.ScalametaParser@2ddc2e4f
+where ScalametaParser.this.token = case
+where Token = scala.meta.tokens.Token$@49d2254a
+java.util.concurrent.CompletionException: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.classifiers.`package`.XtensionClassifiable[scala.meta.tokens.Token](ScalametaParser.this.token)(scala.meta.tokens.Token.classifiable[scala.meta.tokens.Token]).isNot[scala.meta.tokens.Token.KwCase](Token.this.KwCase.classifier[scala.meta.tokens.Token]).&&(org.scalameta.`package`.debug(ScalametaParser.this.token))
+found that scala.meta.classifiers.`package`.XtensionClassifiable[scala.meta.tokens.Token](ScalametaParser.this.token)(scala.meta.tokens.Token.classifiable[scala.meta.tokens.Token]).isNot[scala.meta.tokens.Token.KwCase](Token.this.KwCase.classifier[scala.meta.tokens.Token]) is false
+where ScalametaParser = scala.meta.internal.parsers.ScalametaParser@2ddc2e4f
+where ScalametaParser.this.token = case
+where Token = scala.meta.tokens.Token$@49d2254a
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1702)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.classifiers.`package`.XtensionClassifiable[scala.meta.tokens.Token](ScalametaParser.this.token)(scala.meta.tokens.Token.classifiable[scala.meta.tokens.Token]).isNot[scala.meta.tokens.Token.KwCase](Token.this.KwCase.classifier[scala.meta.tokens.Token]).&&(org.scalameta.`package`.debug(ScalametaParser.this.token))
+found that scala.meta.classifiers.`package`.XtensionClassifiable[scala.meta.tokens.Token](ScalametaParser.this.token)(scala.meta.tokens.Token.classifiable[scala.meta.tokens.Token]).isNot[scala.meta.tokens.Token.KwCase](Token.this.KwCase.classifier[scala.meta.tokens.Token]) is false
+where ScalametaParser = scala.meta.internal.parsers.ScalametaParser@2ddc2e4f
+where ScalametaParser.this.token = case
+where Token = scala.meta.tokens.Token$@49d2254a
+	at org.scalameta.invariants.InvariantFailedException$.raise(Exceptions.scala:19)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$caseClause$1(ScalametaParser.scala:2820)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.caseClause(ScalametaParser.scala:2819)
+	at scala.meta.internal.parsers.ScalametaParser.caseClauses(ScalametaParser.scala:2860)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$matchClause$4(ScalametaParser.scala:2025)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:611)
+	at scala.meta.internal.parsers.ScalametaParser.inBracesOrError(ScalametaParser.scala:618)
+	at scala.meta.internal.parsers.ScalametaParser.inBracesOrNil(ScalametaParser.scala:633)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$matchClause$3(ScalametaParser.scala:2025)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.matchClause(ScalametaParser.scala:2025)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$1(ScalametaParser.scala:2189)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:2033)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockStatSeq$2(ScalametaParser.scala:4668)
+	at scala.meta.internal.parsers.ScalametaParser.stat(ScalametaParser.scala:4514)
+	at scala.meta.internal.parsers.ScalametaParser.blockStatSeq(ScalametaParser.scala:4668)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$block$1(ScalametaParser.scala:2816)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.block(ScalametaParser.scala:2815)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockExpr$1(ScalametaParser.scala:2811)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.blockExpr(ScalametaParser.scala:2809)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$4(ScalametaParser.scala:2629)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:611)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$1(ScalametaParser.scala:2629)
+	at scala.meta.internal.parsers.ScalametaParser.atPosTry(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.autoPosTry(ScalametaParser.scala:707)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr0(ScalametaParser.scala:2607)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr(ScalametaParser.scala:2605)
+	at scala.meta.internal.parsers.ScalametaParser.prefixExpr(ScalametaParser.scala:2589)
+	at scala.meta.internal.parsers.ScalametaParser.postfixExpr(ScalametaParser.scala:2569)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$15(ScalametaParser.scala:2167)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$1(ScalametaParser.scala:2167)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:2033)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1977)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$1(ScalametaParser.scala:2064)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:2033)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1977)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$1(ScalametaParser.scala:2104)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:2033)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockStatSeq$2(ScalametaParser.scala:4668)
+	at scala.meta.internal.parsers.ScalametaParser.stat(ScalametaParser.scala:4514)
+	at scala.meta.internal.parsers.ScalametaParser.blockStatSeq(ScalametaParser.scala:4668)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$block$1(ScalametaParser.scala:2816)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.block(ScalametaParser.scala:2815)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockExpr$1(ScalametaParser.scala:2811)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.blockExpr(ScalametaParser.scala:2809)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$4(ScalametaParser.scala:2629)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:611)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$1(ScalametaParser.scala:2629)
+	at scala.meta.internal.parsers.ScalametaParser.atPosTry(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.autoPosTry(ScalametaParser.scala:707)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr0(ScalametaParser.scala:2607)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr(ScalametaParser.scala:2605)
+	at scala.meta.internal.parsers.ScalametaParser.prefixExpr(ScalametaParser.scala:2589)
+	at scala.meta.internal.parsers.ScalametaParser.postfixExpr(ScalametaParser.scala:2569)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$15(ScalametaParser.scala:2167)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$1(ScalametaParser.scala:2167)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:2033)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1977)
+	at scala.meta.internal.parsers.ScalametaParser.exprMaybeIndented(ScalametaParser.scala:2005)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$funDefRest$1(ScalametaParser.scala:3975)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.funDefRest(ScalametaParser.scala:3917)
+	at scala.meta.internal.parsers.ScalametaParser.funDefOrDclOrExtensionOrSecondaryCtor(ScalametaParser.scala:3869)
+	at scala.meta.internal.parsers.ScalametaParser.defOrDclOrSecondaryCtor(ScalametaParser.scala:3755)
+	at scala.meta.internal.parsers.ScalametaParser.nonLocalDefOrDcl(ScalametaParser.scala:3740)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$templateStat$1.applyOrElse(ScalametaParser.scala:4595)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$templateStat$1.applyOrElse(ScalametaParser.scala:4589)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at scala.meta.internal.parsers.ScalametaParser.statSeq(ScalametaParser.scala:4533)
+	at scala.meta.internal.parsers.ScalametaParser.templateStats(ScalametaParser.scala:4588)
+	at scala.meta.internal.parsers.ScalametaParser.templateStatSeq(ScalametaParser.scala:4585)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateBody$1(ScalametaParser.scala:4442)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:611)
+	at scala.meta.internal.parsers.ScalametaParser.templateBody(ScalametaParser.scala:4442)
+	at scala.meta.internal.parsers.ScalametaParser.templateBodyOpt(ScalametaParser.scala:4447)
+	at scala.meta.internal.parsers.ScalametaParser.templateOpt(ScalametaParser.scala:4435)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$objectDef$1(ScalametaParser.scala:4177)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.objectDef(ScalametaParser.scala:4169)
+	at scala.meta.internal.parsers.ScalametaParser.tmplDef(ScalametaParser.scala:4053)
+	at scala.meta.internal.parsers.ScalametaParser.topLevelTmplDef(ScalametaParser.scala:4035)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$topStat$1.applyOrElse(ScalametaParser.scala:4555)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$topStat$1.applyOrElse(ScalametaParser.scala:4543)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at scala.meta.internal.parsers.ScalametaParser.statSeq(ScalametaParser.scala:4533)
+	at scala.meta.internal.parsers.ScalametaParser.topStatSeq(ScalametaParser.scala:4542)
+	at scala.meta.internal.parsers.ScalametaParser.bracelessPackageStats$1(ScalametaParser.scala:4745)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$9(ScalametaParser.scala:4751)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$1(ScalametaParser.scala:4751)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.batchSource(ScalametaParser.scala:4719)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$source$1(ScalametaParser.scala:4702)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:688)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:704)
+	at scala.meta.internal.parsers.ScalametaParser.source(ScalametaParser.scala:4701)
+	at scala.meta.internal.parsers.ScalametaParser.entrypointSource(ScalametaParser.scala:4707)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$parseSource$2(ScalametaParser.scala:137)
+	at scala.meta.internal.parsers.ScalametaParser.parseRule(ScalametaParser.scala:47)
+	at scala.meta.internal.parsers.ScalametaParser.parseSource(ScalametaParser.scala:137)
+	at scala.meta.parsers.Parse$.$anonfun$parseSource$1(Parse.scala:29)
+	at scala.meta.internal.parsers.ScalametaParser$$anon$245.apply(ScalametaParser.scala:4763)
+	at scala.meta.parsers.Api$XtensionParseDialectInput.parse(Api.scala:25)
+	at scala.meta.internal.metals.Trees.$anonfun$parse$1(Trees.scala:66)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.metals.Trees.parse(Trees.scala:64)
+	at scala.meta.internal.metals.Trees.didChange(Trees.scala:38)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$didChange$1(ScalaPresentationCompiler.scala:128)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)
+	... 3 more
+
+2020.12.18 23:26:17 WARN  no build tool detected in workspace '/home/lee/p/hos'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.18 23:26:20 WARN  no build tool detected in workspace '/home/lee/p/hos'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.18 23:26:46 WARN  no build tool detected in workspace '/home/lee/p/hos'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.18 23:26:46 WARN  no build target for: /home/lee/p/hos/c17/agent/src/Agent.scala
+2020.12.18 23:26:59 WARN  no build target for: /home/lee/p/hos/c17/agent/src/Agent.scala
+2020.12.18 23:27:54 WARN  no build target for: /home/lee/p/hos/c17/test/src/Sync.scala
+2020.12.18 23:29:49 WARN  no build target for: /home/lee/p/hos/c17/sync/src/Sync.scala
+2020.12.18 23:30:35 WARN  no build target for: /home/lee/p/hos/c17/shared/src/Rpc.scala
+2020.12.18 23:31:08 WARN  no build tool detected in workspace '/home/lee/p/hos'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.18 23:31:08 WARN  no build target for: /home/lee/p/hos/c17/agent/src/Agent.scala
+2020.12.18 23:31:36 WARN  no build target for: /home/lee/p/hos/c17/sync/src/Sync.scala
+2020.12.18 23:32:28 WARN  no build target for: /home/lee/p/hos/c17/sync/src/Sync.scala
+2020.12.18 23:32:30 WARN  no build tool detected in workspace '/home/lee/p/hos'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.18 23:33:38 WARN  no build target for: /home/lee/p/hos/c17/test/src/Sync.scala
+2020.12.18 23:34:45 WARN  no build tool detected in workspace '/home/lee/p/hos'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.18 23:34:45 WARN  no build target for: /home/lee/p/hos/c17/agent/src/Agent.scala
+2020.12.18 23:36:13 WARN  no build target for: /home/lee/p/hos/c17/agent/src/Agent.scala
+2020.12.18 23:36:17 WARN  no build target for: /home/lee/p/hos/c17/agent/src/Agent.scala
+2020.12.18 23:36:50 WARN  no build target for: /home/lee/p/hos/c17/agent/src/Agent.scala
+2020.12.18 23:36:50 WARN  no build target for: /home/lee/p/hos/c17/agent/src/Agent.scala
+2020.12.18 23:36:52 WARN  no build target for: /home/lee/p/hos/c17/agent/src/Agent.scala
+2020.12.18 23:37:56 WARN  no build target for: /home/lee/p/hos/c17/test/src/Sync.scala
+2020.12.18 23:37:56 WARN  no build target for: /home/lee/p/hos/c17/test/src/Sync.scala
+2020.12.18 23:39:27 WARN  no build target for: /home/lee/p/hos/c17/agent/src/Agent.scala
+2020.12.18 23:39:28 WARN  no build tool detected in workspace '/home/lee/p/hos'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.18 23:39:30 WARN  no build target for: /home/lee/p/hos/c17/agent/src/Agent.scala
+2020.12.18 23:40:00 WARN  no build target for: /home/lee/p/hos/c17/test/src/Sync.scala
+2020.12.18 23:40:19 WARN  no build target for: /home/lee/p/hos/c17/agent/src/Agent.scala
+2020.12.18 23:40:19 WARN  no build target for: /home/lee/p/hos/c17/agent/src/Agent.scala
+2020.12.18 23:40:25 WARN  no build target for: /home/lee/p/hos/c17/agent/src/Agent.scala
+2020.12.18 23:42:31 WARN  no build target for: /home/lee/p/hos/c17/sync/src/Sync.scala
+2020.12.18 23:42:43 WARN  no build tool detected in workspace '/home/lee/p/hos'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.18 23:42:49 WARN  no build tool detected in workspace '/home/lee/p/hos'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.18 23:43:01 WARN  no build tool detected in workspace '/home/lee/p/hos'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.18 23:44:14 WARN  no build target for: /home/lee/p/hos/c17/sync/src/Sync.scala
+something's wrong: no file:///home/lee/p/hos/c17/sync/src/Sync.scala in Seq[<error>]RangePosition(file:///home/lee/p/hos/c17/sync/src/Sync.scala, 1144, 1144, 1157)
+something's wrong: no file:///home/lee/p/hos/c17/sync/src/Sync.scala in Seq[<error>]RangePosition(file:///home/lee/p/hos/c17/sync/src/Sync.scala, 1144, 1144, 1150)
+something's wrong: no file:///home/lee/p/hos/c17/sync/src/Sync.scala in Seq[<error>]RangePosition(file:///home/lee/p/hos/c17/sync/src/Sync.scala, 1144, 1144, 1151)
+something's wrong: no file:///home/lee/p/hos/c17/sync/src/Sync.scala in Seq[String]RangePosition(file:///home/lee/p/hos/c17/sync/src/Sync.scala, 1144, 1144, 1155)
+2020.12.18 23:44:35 WARN  no build target for: /home/lee/p/hos/c17/sync/src/Sync.scala
+something's wrong: no file:///home/lee/p/hos/c17/sync/src/Sync.scala in Seq[String]RangePosition(file:///home/lee/p/hos/c17/sync/src/Sync.scala, 1144, 1144, 1155)
+something's wrong: no file:///home/lee/p/hos/c17/sync/src/Sync.scala in Seq[String]RangePosition(file:///home/lee/p/hos/c17/sync/src/Sync.scala, 1144, 1144, 1155)
+something's wrong: no file:///home/lee/p/hos/c17/sync/src/Sync.scala in Seq[<error>]RangePosition(file:///home/lee/p/hos/c17/sync/src/Sync.scala, 1155, 1155, 1168)
+something's wrong: no file:///home/lee/p/hos/c17/sync/src/Sync.scala in Seq[<error>]RangePosition(file:///home/lee/p/hos/c17/sync/src/Sync.scala, 1155, 1155, 1161)
+something's wrong: no file:///home/lee/p/hos/c17/sync/src/Sync.scala in Seq[String]RangePosition(file:///home/lee/p/hos/c17/sync/src/Sync.scala, 1155, 1155, 1166)
+something's wrong: no file:///home/lee/p/hos/c17/sync/src/Sync.scala in Seq[String]RangePosition(file:///home/lee/p/hos/c17/sync/src/Sync.scala, 1155, 1155, 1166)
+something's wrong: no file:///home/lee/p/hos/c17/sync/src/Sync.scala in Seq[String]RangePosition(file:///home/lee/p/hos/c17/sync/src/Sync.scala, 1155, 1155, 1166)
+something's wrong: no file:///home/lee/p/hos/c17/sync/src/Sync.scala in Seq[<error>]RangePosition(file:///home/lee/p/hos/c17/sync/src/Sync.scala, 1144, 1144, 1157)
+something's wrong: no file:///home/lee/p/hos/c17/sync/src/Sync.scala in Seq[<error>]RangePosition(file:///home/lee/p/hos/c17/sync/src/Sync.scala, 1144, 1144, 1150)
+something's wrong: no file:///home/lee/p/hos/c17/sync/src/Sync.scala in Seq[<error>]RangePosition(file:///home/lee/p/hos/c17/sync/src/Sync.scala, 1144, 1144, 1151)
+something's wrong: no file:///home/lee/p/hos/c17/sync/src/Sync.scala in Seq[String]RangePosition(file:///home/lee/p/hos/c17/sync/src/Sync.scala, 1144, 1144, 1155)
+2020.12.18 23:46:12 WARN  no build target for: /home/lee/p/hos/c17/sync/src/Sync.scala
+2020.12.18 23:46:42 WARN  no build target for: /home/lee/p/hos/c17/sync/src/Sync.scala
+2020.12.18 23:46:50 WARN  no build target for: /home/lee/p/hos/c17/sync/src/Sync.scala
+2020.12.18 23:47:05 WARN  no build target for: /home/lee/p/hos/c17/sync/src/Sync.scala
+2020.12.18 23:49:43 WARN  no build tool detected in workspace '/home/lee/p/hos'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.19 02:02:00 INFO  shutting down Metals

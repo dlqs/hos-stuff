@@ -1,0 +1,11 @@
+{
+    "value": {
+        "main": {
+            "Manifest-Version": "1.0",
+            "Created-By": "Scala mill",
+            "Main-Class": "sync.Sync"
+        }
+    },
+    "valueHash": -1464184855,
+    "inputsHash": 302785685
+}

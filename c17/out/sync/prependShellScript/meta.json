@@ -1,0 +1,5 @@
+{
+    "value": "@ 2>/dev/null # 2>nul & echo off & goto BOF\r\n:\nexec java  $JAVA_OPTS -cp \"$0\" 'sync.Sync' \"$@\"\nexit\n\r\n:BOF\r\nsetlocal\r\n@echo off\r\njava  %JAVA_OPTS% -cp \"%~dpnx0\" sync.Sync %*\r\nendlocal\r\nexit /B %errorlevel%\r\n",
+    "valueHash": 1150969366,
+    "inputsHash": 85022205
+}

@@ -1,9 +1,0 @@
-{
-    "value": [
-        "ref:c984eca8:/home/lee/p/hos/c17/sync/resources",
-        "ref:751bc615:/home/lee/p/hos/c17/out/sync/resources/dest",
-        "ref:4ca97900:/home/lee/p/hos/c17/out/sync/compile/dest/classes"
-    ],
-    "valueHash": 457879130,
-    "inputsHash": -2039786042
-}

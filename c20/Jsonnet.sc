@@ -65,12 +65,17 @@ def evaluate(expr: Expr, scope: Map[String, Value]): Value = expr match {
   case Expr.Func(argNames, body) =>
     Value.Func(args => evaluate(body, scope ++ argNames.zip(args)))
 }
-def serialize(v: Value): String = v match {
-  case Value.Str(s) => "\"" + s + "\""
-  case Value.Number(i) => i.toString()
+def serialize(v: Value): ujson.Value = v match {
+  case Value.Str(s) => ujson.Str(s)
+  case Value.Number(i) => ujson.Num(i)
   case Value.Dict(kvs) =>
-    kvs.map{case (k, v) => "\"" + k + "\": " + serialize(v)}.mkString("{", ", ", "}")
+    ujson.Obj.from(
+      kvs.map{case (k, v) => k -> serialize(v)}
+    )
 }
 def jsonnet(input: String): String = {
-  serialize(evaluate(fastparse.parse(input, Parser.expr(_)).get.value, Map.empty))
+  ujson.write(
+    serialize(evaluate(fastparse.parse(input, Parser.expr(_)).get.value, Map.empty)),
+    indent = 2
+  )
 }

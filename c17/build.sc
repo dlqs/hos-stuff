@@ -13,6 +13,10 @@ object sync extends SyncModule{
     os.copy(agent.assembly().path, T.dest / "agent.jar")
     super.resources() ++ Seq(PathRef(T.dest))
   }
+  object test extends Tests{ // Test Suite
+    def testFrameworks = Seq("utest.runner.Framework")
+    def ivyDeps = Agg(ivy"com.lihaoyi::utest:0.7.4")
+  }   
 }
 object agent extends SyncModule{
   def moduleDeps = Seq(shared)

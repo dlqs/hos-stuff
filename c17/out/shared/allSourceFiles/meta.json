@@ -1,8 +1,8 @@
 {
     "value": [
-        "ref:ee7b28cf:/home/lee/p/hos/c17/shared/src/Rpc.scala",
-        "ref:f605320d:/home/lee/p/hos/c17/shared/src/Shared.scala"
+        "ref:f605320d:/home/lee/p/hos/c17/shared/src/Shared.scala",
+        "ref:ee7b28cf:/home/lee/p/hos/c17/shared/src/Rpc.scala"
     ],
-    "valueHash": 2135580578,
-    "inputsHash": 1307774090
+    "valueHash": -1963130315,
+    "inputsHash": -2068600637
 }

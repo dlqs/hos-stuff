@@ -1,4 +1,7 @@
 package sync
+
+import Rpc.subPathRw
+
 object Agent {
   def main(args: Array[String]): Unit = {
     val input = new java.io.DataInputStream(System.in)
@@ -7,10 +10,9 @@ object Agent {
       val rpc = Shared.receive[Rpc](input)
       rpc match {
         case Rpc.ListDest() =>
-          Shared.send(output, os.walk(os.pwd).map(_.subRelativeTo(os.pwd).toString).toSeq)
+          Shared.send(output, os.walk(os.pwd).map(_.subRelativeTo(os.pwd)))
         case Rpc.Delete(path) =>
-          os.remove.all(os.pwd / path)
-          Shared.send(output, true)
+          Shared.send(output, os.remove(os.pwd / path))
         case Rpc.IsDir(path) => Shared.send(output, os.isDir(os.pwd / path))
         case Rpc.Exists(path) => Shared.send(output, os.exists(os.pwd / path))
         case Rpc.ReadBytes(path) => Shared.send(output, os.read.bytes(os.pwd / path))

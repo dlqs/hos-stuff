@@ -1,12 +1,2 @@
 [0m[[0m[0minfo[0m] [0m[0mCompiling 1 Scala source to /home/lee/p/hos/c17/out/sync/compile/dest/classes ...[0m
-[0m[[0m[31merror[0m] [0m[0m/home/lee/p/hos/c17/sync/src/Sync.scala:29:60: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : sync.Rpc.ListDest.type[0m
-[0m[[0m[31merror[0m] [0m[0m required: sync.Rpc[0m
-[0m[[0m[31merror[0m] [0m[0m    val destPath: Seq[String] = callAgent[Seq[String]](Rpc.ListDest)()[0m
-[0m[[0m[31merror[0m] [0m[0m                                                           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/lee/p/hos/c17/sync/src/Sync.scala:32:18: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : String[0m
-[0m[[0m[31merror[0m] [0m[0m required: os.SubPath[0m
-[0m[[0m[31merror[0m] [0m[0m      Rpc.Delete(p)[0m
-[0m[[0m[31merror[0m] [0m[0m                 ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[0minfo[0m] [0m[0mDone compiling.[0m

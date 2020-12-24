@@ -1,4 +1,7 @@
 package sync
+
+import Rpc.subPathRw
+
 object Sync {
   def main(args: Array[String]): Unit = {
     val src = os.Path(args(0), os.pwd)
@@ -26,10 +29,10 @@ object Sync {
       if (existsMap(p) && !isDirMap(p)) Some(Rpc.ReadBytes(p))
       else None
     }
-    val destPath: Seq[String] = callAgent[Seq[String]](Rpc.ListDest())()
+    val destPath: Seq[os.SubPath] = callAgent[Seq[os.SubPath]](Rpc.ListDest()).apply()
     val diffPath = destPath diff subPaths
     for (p <- diffPath) {
-      Rpc.Delete(p)
+      callAgent[Unit](Rpc.Delete(p)).apply()
     }
     pipelineCalls[Unit]{ p =>
       if (os.isDir(src / p)) None

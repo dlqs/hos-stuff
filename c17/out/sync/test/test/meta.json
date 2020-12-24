@@ -1,0 +1,15 @@
+{
+    "value": [
+        "Tests: 1, Passed: 1, Failed: 0",
+        [
+            {
+                "fullyQualifiedName": "sync.SyncTests",
+                "selector": "sync.SyncTests.success",
+                "duration": 1094,
+                "status": "Success"
+            }
+        ]
+    ],
+    "valueHash": -6877366,
+    "inputsHash": 463552414
+}

@@ -9,10 +9,12 @@ object Sync {
     val agentExecutable = os.temp(os.read.bytes(os.resource / "agent.jar"))
     os.perms.set(agentExecutable, "rwx------")
     val agent = os.proc(agentExecutable).spawn(cwd = dest)
+    val agentIn = new java.io.DataOutputStream(new java.util.zip.GZIPOutputStream(agent.stdin, true))
+    lazy val agentOut = new java.io.DataInputStream(new java.util.zip.GZIPInputStream(agent.stdout))
 
     def callAgent[T: upickle.default.Reader](rpc: Rpc): () => T = {
-      Shared.send(agent.stdin.data, rpc)
-      () => Shared.receive[T](agent.stdout.data)
+      Shared.send(agentIn, rpc)
+      () => Shared.receive[T](agentOut)
     }
 
     val subPaths = os.walk(src).map(_.subRelativeTo(src))

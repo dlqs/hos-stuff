@@ -4,8 +4,8 @@ import Rpc.subPathRw
 
 object Agent {
   def main(args: Array[String]): Unit = {
-    val input = new java.io.DataInputStream(System.in)
-    val output = new java.io.DataOutputStream(System.out)
+    val input = new java.io.DataInputStream(new java.util.zip.GZIPInputStream(System.in))
+    val output = new java.io.DataOutputStream(new java.util.zip.GZIPOutputStream(System.out, true))
     while (true) try {
       val rpc = Shared.receive[Rpc](input)
       rpc match {

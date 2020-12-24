@@ -28,16 +28,6 @@ object SyncTests extends TestSuite{
       println("SECOND VALIDATION")
       assert(os.read(dest / "folder1" / "hello.txt") == "hello")
       assert(os.read(dest /  "folder1" / "nested" / "world.txt") == "WORLD")
-
-      println("DELETE SRC FILE")
-      os.remove(src / "folder1" / "hello.txt")
-
-      println("DELETE SYNC")
-      Sync.main(Array(src.toString, dest.toString))
-
-      println("DELETE VALIDATION")
-      assert(!os.exists(dest / "folder1" / "hello.txt"))
-      assert(os.read(dest /  "folder1" / "nested" / "world.txt") == "WORLD")
     }
   }
 }
